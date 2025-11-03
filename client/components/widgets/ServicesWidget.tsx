@@ -44,7 +44,7 @@ export default function ServicesWidget() {
     <section className="py-20 md:py-28 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4">
         <div className="mb-16">
-          <div className="w-16 h-1 bg-[hsl(var(--primary))] mb-4"></div>
+          <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
           <h2 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
             Our Services
           </h2>
