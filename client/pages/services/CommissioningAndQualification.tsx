@@ -3,6 +3,9 @@ import commissioningData from "@/config/data/commissioning.json";
 import { Wrench, Building2 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { Link } from "react-router-dom";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.CommissioningAndQualification;
 
 const ICONS: Record<string, any> = { Wrench, Building2 };
 
@@ -10,8 +13,8 @@ export default function CommissioningAndQualification() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title={commissioningData.title}
-        description={commissioningData.description}
+        title={pageConfig.titleSource ? commissioningData.title : pageConfig.title}
+        description={pageConfig.descriptionSource ? commissioningData.description : pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },
