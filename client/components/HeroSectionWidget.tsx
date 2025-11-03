@@ -82,7 +82,7 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
 
   return (
     <section
-      className="pt-5 relative text-white overflow-hidden min-h-screen md:h-screen lg:h-screen"
+      className="pt-5 relative text-white overflow-hidden min-h-screen"
       data-header-anchor
       aria-label="Hero section"
     >
