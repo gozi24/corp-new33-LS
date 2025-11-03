@@ -2,6 +2,9 @@ import { PageBanner } from "@/components/layout/PageBanner";
 import { useEffect, useState } from "react";
 import type { VideoItem } from "@/entities/video";
 import { VideoCard } from "@/components/cards/VideoCard";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.ResourcesVideos;
 
 export default function Videos() {
   const [videos, setVideos] = useState<VideoItem[] | null>(null);
@@ -47,8 +50,8 @@ export default function Videos() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Videos"
-        description="Curated videos about biosafety and proper use of biological safety cabinets."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Resources", href: "/resources" },

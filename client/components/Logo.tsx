@@ -4,23 +4,28 @@ import { siteConfig } from "@/config/config";
 interface LogoProps {
   variant?: "header" | "footer";
   hideName?: boolean;
+  hideImage?: boolean;
 }
 
 export default function Logo({
   variant = "header",
   hideName = false,
+  hideImage = false,
 }: LogoProps) {
   const isHeader = variant === "header";
+  const showLogoImage = hideImage ? false : siteConfig.showLogoImage !== false;
 
   const logoContent = (
     <div className="flex select-none items-center gap-3">
-      <img
-        src={siteConfig.logoPath}
-        alt={siteConfig.siteName}
-        className={
-          isHeader ? "h-14 w-14 object-contain" : "h-20 w-20 object-contain"
-        }
-      />
+      {showLogoImage && (
+        <img
+          src={siteConfig.logoPath}
+          alt={siteConfig.siteName}
+          className={
+            isHeader ? "h-14 w-14 object-contain" : "h-20 w-20 object-contain"
+          }
+        />
+      )}
       {!hideName && (
         <div
           className={

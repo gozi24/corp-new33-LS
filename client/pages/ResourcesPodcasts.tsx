@@ -2,6 +2,9 @@ import { PageBanner } from "@/components/layout/PageBanner";
 import { useEffect, useState } from "react";
 import type { PodcastItem } from "@/entities/podcast";
 import { PodcastCard } from "@/components/cards/PodcastCard";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.ResourcesPodcasts;
 
 export default function Podcasts() {
   const [items, setItems] = useState<PodcastItem[] | null>(null);
@@ -46,8 +49,8 @@ export default function Podcasts() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Podcasts"
-        description="Interviews and discussions with biosafety experts."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Resources", href: "/resources" },

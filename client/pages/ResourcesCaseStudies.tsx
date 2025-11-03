@@ -1,12 +1,19 @@
 import { PageBanner } from "@/components/layout/PageBanner";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.ResourcesCaseStudies;
 
 export default function CaseStudies() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Case Studies"
-        description="Real-world implementations and learnings from Esco projects."
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Case Studies" }]}
+        title={pageConfig.title}
+        description={pageConfig.description}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Resources", href: "/resources" },
+          { label: "Case Studies" },
+        ]}
       />
 
       <section className="container mx-auto px-4 py-12 md:py-16">

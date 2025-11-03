@@ -1,0 +1,95 @@
+{
+  "pages": {
+    "About": {
+      "title": "About Us",
+      "descriptionSource": "aboutData",
+      "backgroundImage": "https://images.pexels.com/photos/5726809/pexels-photo-5726809.jpeg"
+    },
+    "Blog": {
+      "title": "News",
+      "description": "Insights on medical technology, procurement and implementation to help your clinic operate at its best."
+    },
+    "Brochures": {
+      "title": "Brochures",
+      "description": "Download product brochures, checklists, and quick-start guides for laboratory safety."
+    },
+    "Catalog": {
+      "title": "Products",
+      "description": "Explore certified biosafety and laboratory equipment. Search and filter by categories or special tags."
+    },
+    "Contact": {
+      "title": "Contact Us",
+      "description": "Leave your details and our team will prepare a tailored quote for your facility."
+    },
+    "Faq": {
+      "title": "FAQ",
+      "description": "Answers to the most common questions about delivery, installation and certifications."
+    },
+    "News": {
+      "title": "News",
+      "description": "Updates, product news, and practical insights from our team and partners."
+    },
+    "Resources": {
+      "title": "Knowledge Hub",
+      "description": "A curated collection of learning materials, videos, and case studies to help you stay informed about biosafety best practices.",
+      "backgroundImage": "https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg",
+      "gradient": "linear-gradient(135deg, #020113 0%, #003BA3)"
+    },
+    "ResourcesKnowledgeHub": {
+      "title": "Articles",
+      "description": "Guides, articles and whitepapers on biosafety and lab practices."
+    },
+    "ResourcesVideos": {
+      "title": "Videos",
+      "description": "Curated videos about biosafety and proper use of biological safety cabinets."
+    },
+    "ResourcesQuizzes": {
+      "title": "Quizzes",
+      "description": "Challenge your biosafety knowledge with interactive quizzes and track your progress."
+    },
+    "ResourcesPodcasts": {
+      "title": "Podcasts",
+      "description": "Interviews and discussions with biosafety experts."
+    },
+    "ResourcesCaseStudies": {
+      "title": "Case Studies",
+      "description": "Real-world implementations and learnings from Esco projects."
+    },
+    "Trainings": {
+      "title": "About Trainings",
+      "description": "Expert-led programs delivered from our dedicated learning centers and through global offices."
+    },
+    "Seminars": {
+      "title": "Seminars",
+      "descriptionSource": "seminarsData"
+    },
+    "TrainingsOverview": {
+      "title": "Services",
+      "description": "Comprehensive training programs and resources to enhance your biosafety expertise."
+    },
+    "Services": {
+      "titleSource": "servicesData",
+      "descriptionSource": "servicesData"
+    },
+    "CommissioningAndQualification": {
+      "titleSource": "commissioningData",
+      "descriptionSource": "commissioningData"
+    },
+    "TrainingsAndSeminars": {
+      "titleSource": "trainingsData",
+      "descriptionSource": "trainingsData"
+    },
+    "ValidationService": {
+      "titleSource": "validationData",
+      "descriptionSource": "validationData"
+    },
+    "NotFound": {
+      "title": "404 — Page not found",
+      "description": "Sorry, we couldn't find the page you're looking for. Try returning to the homepage or using the site navigation."
+    },
+    "Sitemap": {
+      "title": "Sitemap",
+      "description": "Browse the complete structure of our website"
+    }
+  }
+}

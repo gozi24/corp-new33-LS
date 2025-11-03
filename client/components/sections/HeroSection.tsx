@@ -21,7 +21,7 @@ interface HeroButton {
   variant: "primary" | "outline";
 }
 
-interface HeroSectionWidgetProps {
+interface HeroSectionProps {
   title?: string;
   description?: string;
   backgroundImage?: string;
@@ -30,9 +30,9 @@ interface HeroSectionWidgetProps {
   cta?: HeroButton[];
 }
 
-const defaultConfig: Required<HeroSectionWidgetProps> = {
+const defaultConfig: Required<HeroSectionProps> = {
   title: `Welcome to ${siteConfig.siteName}!`,
-  description: `Safety in any laboratory is fundamental. The ${siteConfig.siteName} was established to be your partner in achieving it. We provide:`,
+  description: `${siteConfig.hero_descr}`,
   backgroundImage: "/ebi_hero.jpg",
   backgroundImageAlt:
     "Bright and sterile laboratory featuring high-tech research equipment and medical professionals at work",
@@ -74,7 +74,7 @@ const defaultConfig: Required<HeroSectionWidgetProps> = {
   ],
 };
 
-export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
+export default function HeroSection(props: HeroSectionProps = {}) {
   const config = {
     ...defaultConfig,
     ...props,

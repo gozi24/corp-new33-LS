@@ -1,4 +1,7 @@
 import { PageBanner } from "@/components/layout/PageBanner";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.Blog;
 
 export default function Blog() {
   const posts = [
@@ -9,8 +12,8 @@ export default function Blog() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="News"
-        description="Insights on medical technology, procurement and implementation to help your clinic operate at its best."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "News" }]}
       />
       <div className="container mx-auto px-4 py-12">

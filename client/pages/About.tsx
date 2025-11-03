@@ -4,15 +4,18 @@ import { PageBanner } from "@/components/layout/PageBanner";
 import { Button } from "@/components/Button";
 import { siteConfig } from "@/config/config";
 import aboutData from "@/config/data/about.json";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.About;
 
 export default function About() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="About Us"
+        title={pageConfig.title}
         description={aboutData.bannerDescription}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
-        backgroundImage="https://images.pexels.com/photos/5726809/pexels-photo-5726809.jpeg"
+        backgroundImage={pageConfig.backgroundImage}
       />
       {/* Hero */}
       <section className="relative container mx-auto px-4 py-16 md:py-24">

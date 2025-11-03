@@ -3,13 +3,20 @@ import validationData from "@/config/data/validation.json";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { Link } from "react-router-dom";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.ValidationService;
 
 export default function ValidationService() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title={validationData.title}
-        description={validationData.description}
+        title={pageConfig.titleSource ? validationData.title : pageConfig.title}
+        description={
+          pageConfig.descriptionSource
+            ? validationData.description
+            : pageConfig.description
+        }
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },
