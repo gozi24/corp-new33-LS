@@ -22,7 +22,7 @@ const NotFound = () => {
 
       <section className="container mx-auto px-4 py-12 md:py-16">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold">Page not found</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold">Page not found</h2>
           <p className="mt-4 text-lg text-slate-600">
             The requested URL <span className="font-mono text-sm text-slate-700">{location.pathname}</span> does not exist on this site.
           </p>
