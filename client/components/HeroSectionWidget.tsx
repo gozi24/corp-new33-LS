@@ -107,28 +107,28 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
           }}
         />
       </div>
-      <div className="relative container mx-auto px-4 pt-32 pb-24 md:pt-40 md:h-screen lg:pt-52 lg:pb-40 flex items-center">
+      <div className="relative container mx-auto px-4 pt-20 pb-16 md:pt-40 md:h-screen lg:pt-52 lg:pb-40 flex items-center">
         <div className="hero-grid grid gap-6 items-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+          <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
             {config.title}
           </h1>
-          <p className="mt-6 text-white text-lg md:text-xl leading-relaxed max-w-2xl">
+          <p className="mt-4 md:mt-6 text-white text-sm md:text-xl leading-relaxed max-w-2xl">
             {config.description}
           </p>
 
-          <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+          <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 max-w-2xl">
             {config.features.map(({ label, icon: Icon, bg }) => (
               <div
                 key={label}
                 className={cn(
-                  "flex items-center gap-4 text-white rounded-lg px-4 py-4 backdrop-blur-sm bg-white/10 border border-white/20",
+                  "flex items-center gap-2 md:gap-4 text-white rounded-lg px-3 py-3 md:px-4 md:py-4 backdrop-blur-sm bg-white/10 border border-white/20",
                   bg,
                 )}
               >
-                <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
-                  <Icon className="h-6 w-6" />
+                <div className="flex-shrink-0 inline-flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-lg bg-white/20">
+                  <Icon className="h-5 w-5 md:h-6 md:w-6" />
                 </div>
-                <span className="font-semibold text-base leading-tight">
+                <span className="font-semibold text-sm md:text-base leading-tight">
                   {label}
                 </span>
               </div>
