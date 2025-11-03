@@ -27,7 +27,7 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
         </h3>
         <p className="text-base sm:text-sm text-slate-600 mb-3">{quiz.subtitle}</p>
         <div className="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-medium sm:font-semibold text-[hsl(var(--primary))] uppercase tracking-wide">
-          <span className="bg-[hsl(var(--primary))]/5 px-2 py-1">
+          <span className="text-base bg-[hsl(var(--primary))]/5 px-2 py-1">
             {quiz.category}
           </span>
           <span className="text-slate-300">—</span>
