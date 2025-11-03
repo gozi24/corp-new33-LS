@@ -94,7 +94,7 @@ export default function Index() {
               Why Choose Us
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
             <BenefitCard
               title="Industry Expertise"
               descr="10+ years supplying public and private healthcare institutions with trusted biosafety solutions"
