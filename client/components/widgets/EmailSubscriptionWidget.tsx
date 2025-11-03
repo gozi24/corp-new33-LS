@@ -8,7 +8,7 @@ export default function EmailSubscriptionWidget() {
         <div className="max-w-2xl mx-auto">
           <div className="mb-6 md:mb-8 text-center">
             <div className="w-12 md:w-16 h-1 bg-brand-secondary mx-auto mb-2 md:mb-4"></div>
-            <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)] mb-3 md:mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(205_100%_12%)] mb-3 md:mb-4">
               {emailSubscriptionData.title}
             </h2>
             <p className="text-sm md:text-lg text-slate-700 leading-relaxed">
