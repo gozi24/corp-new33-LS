@@ -17,17 +17,20 @@ export default function Index() {
       {/* Hero Section */}
       <HeroSection />
 
-      {/* Knowledge Hub */}
-      <section className="py-12 md:py-28 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <KnowledgeHubWidget />
-        </div>
-      </section>
-
       {/* About & Mission Section */}
       <section className="py-12 md:py-28 bg-white">
         <div className="container mx-auto px-4">
           <AboutSection />
+        </div>
+      </section>
+      
+      {/* Services */}
+      <ServicesWidget />
+
+      {/* Knowledge Hub */}
+      <section className="py-12 md:py-28 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <KnowledgeHubWidget />
         </div>
       </section>
 
@@ -49,8 +52,6 @@ export default function Index() {
         </div>
       </section>*/}
 
-      {/* Services */}
-      <ServicesWidget />
 
       {/* Benefits - Color Block Section */}
       <section className="py-12 md:py-28">
