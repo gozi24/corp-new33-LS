@@ -32,7 +32,7 @@ interface HeroSectionWidgetProps {
 
 const defaultConfig: Required<HeroSectionWidgetProps> = {
   title: `Welcome to ${siteConfig.siteName}!`,
-  description: `Biosafety in any laboratory is crucial. The ${siteConfig.siteName} was established to be your partner in achieving it. Our institute provides:`,
+  description: `We believe that every scientific breakthrough begins with a safe environment. Our mission is to partner with the global research community—from academic labs to industrial R&D centers—to create a world where safety is integral to discovery.`,
   backgroundImage:
     "/ebi_hero.jpg",
   backgroundImageAlt:
