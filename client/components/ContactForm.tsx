@@ -23,7 +23,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white">
+    <form onSubmit={handleSubmit} className="bg-transparent">
       <div className="grid gap-8">
         <div className="border-b border-slate-300 pb-8">
           <div className="text-slate-700 text-base leading-relaxed">
