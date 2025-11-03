@@ -1,72 +1,314 @@
 [
   {
-    "slug": "/resources/articles/biosafety-basics",
-    "title": "What is Biosafety?",
-    "description": "Policies, protocols, and practices to minimize exposure to harmful biological agents and protect people and the environment.",
+    "slug": "/resources/articles/cell-culture-basics",
+    "title": "What is Cell Culture? A Beginner's Guide",
+    "description": "An introduction to cell culture techniques, from basic principles to practical applications in research, biotechnology, and medicine.",
     "date": "2025-03-12",
-    "readMins": 7,
+    "readMins": 8,
     "tags": [
-      "Biosafety",
-      "Lab Practices"
+      "Cell Culture",
+      "Lab Techniques",
+      "Biotechnology"
     ],
     "sections": [
       {
-        "id": "history",
-        "title": "Historical Development of Biosafety",
+        "id": "introduction",
+        "title": "Introduction to Cell Culture",
         "content": [
           {
             "type": "p",
-            "text": "Biosafety is shaped by scientific progress and emerging risks. The scientific breakthroughs of Louis Pasteur and Robert Koch in the 1890s revealed the dangers of biological hazards, laying the foundation for biosafety."
+            "text": "Cell culture is one of the most important techniques in modern biology. Whether it is for studying cancer, making vaccines, testing drugs, or growing stem cells for therapy, many scientific discoveries begin with one simple activity—growing cells outside of the body."
           },
           {
             "type": "p",
-            "text": "The increasing number of laboratory-acquired infections (LAIs) in the mid-20th century emphasized the need for stricter laboratory safety protocols. The 1970s marked a turning point when biosafety emerged as a distinct discipline, spurred by international classification systems and pivotal discussions."
-          },
-          {
-            "type": "p",
-            "text": "From the 1980s onward, global conventions and standards were established to regulate biological research and laboratory safety. The scope of biosafety expanded in the 1990s, moving beyond laboratories to address risks in agriculture, environmental protection, and food safety. In 2020, the WHO updated its Laboratory Biosafety Manual to cover all \"biological agents,\" not just pathogens and toxins."
+            "text": "At its core, cell culture is the process of growing cells in a laboratory setting rather than in their natural environment. Instead of residing inside an organism, the cells are placed in a flask or dish and supplied with the nutrients, temperature, and atmosphere they need to survive and multiply."
           }
         ]
       },
       {
-        "id": "bsc",
-        "title": "Biosafety Equipment and Containment Practices",
+        "id": "applications",
+        "title": "Why Scientists Culture Cells",
         "content": [
           {
-            "type": "h3",
-            "text": "Biosafety Cabinets (BSCs)"
+            "type": "p",
+            "text": "Scientists culture cells for many reasons. It allows them to study how cells grow, divide, and communicate without the complexity of working inside an entire organism. Through cell culture, researchers can examine how cells respond to drugs, toxins, or environmental stress."
           },
           {
             "type": "p",
-            "text": "Biosafety cabinets are essential for handling hazardous biological materials. They are classified into three main types:"
+            "text": "They can investigate which genes turn on or off during disease and even engineer cells to produce useful compounds such as hormones, antibodies, and vaccines. Because cells can be kept alive for weeks or even years, experiments can be repeated under consistent conditions, leading to more reliable data."
+          }
+        ]
+      },
+      {
+        "id": "cell-types",
+        "title": "Types of Cells Used in Culture",
+        "content": [
+          {
+            "type": "p",
+            "text": "There are two main kinds of cells used in culture:"
+          },
+          {
+            "type": "h3",
+            "text": "Primary Cells"
+          },
+          {
+            "type": "p",
+            "text": "Primary cells are taken directly from living tissues such as skin, blood, or organs. They behave very similarly to how they would inside the body, which makes them valuable for studying real biological processes. However, primary cells are fragile, have a limited lifespan, and require delicate handling."
+          },
+          {
+            "type": "h3",
+            "text": "Cell Lines"
+          },
+          {
+            "type": "p",
+            "text": "Cell lines are cells that have adapted to grow continuously and divide indefinitely. They are easier to maintain and are widely used in research and industry. Famous examples include HeLa cells, derived from cervical cancer, and CHO cells, which are commonly used to produce therapeutic proteins."
+          }
+        ]
+      },
+      {
+        "id": "requirements",
+        "title": "Environmental Requirements for Cell Culture",
+        "content": [
+          {
+            "type": "p",
+            "text": "Cells cannot survive on their own; they need a carefully controlled environment. In a cell culture laboratory, everything must be kept sterile to prevent contamination by bacteria, fungi, or yeast. Scientists work inside a biosafety cabinet that provides a clean, filtered workspace."
+          },
+          {
+            "type": "h3",
+            "text": "Culture Medium"
+          },
+          {
+            "type": "p",
+            "text": "The cells are fed with a nutrient-rich liquid known as the culture medium, which contains sugars, amino acids, salts, vitamins, and growth factors that mimic the natural fluids surrounding cells in the body. Some media formulations also contain serum, which provides additional hormones and proteins needed for cell growth."
+          },
+          {
+            "type": "h3",
+            "text": "Physical Conditions"
+          },
+          {
+            "type": "p",
+            "text": "Most mammalian cells require a temperature of around 37°C, the same as the human body, and a carbon dioxide level of about five percent to keep the medium at the correct pH. These conditions are maintained inside a specialized incubator. Cells are usually grown in sterile plastic vessels such as flasks, plates, or dishes that are specially treated to help them attach to the surface and spread out."
+          }
+        ]
+      },
+      {
+        "id": "workflow",
+        "title": "Typical Cell Culture Workflow",
+        "content": [
+          {
+            "type": "p",
+            "text": "A typical cell culture session follows a simple rhythm:"
           },
           {
             "type": "ul",
             "items": [
-              "Class I BSCs: protect the user and the environment but do not safeguard samples.",
-              "Class II BSCs: most common; provide personnel, product, and environmental protection (types A2, B1, and B2).",
-              "Class III BSCs: maximum containment; fully enclosed, gas-tight systems for high-risk pathogens such as Ebola and smallpox."
+              "The process often begins by thawing frozen cells or isolating a fresh sample.",
+              "The cells are transferred into a flask containing warm medium and placed in the incubator to allow them to attach and begin dividing.",
+              "Researchers regularly observe them under a microscope to check their health and replace the medium every few days to replenish nutrients.",
+              "When the cells become crowded, they are subcultured, meaning a portion is transferred into a new vessel with fresh medium.",
+              "If the culture is no longer needed, it can be frozen for long-term storage in liquid nitrogen."
             ]
           }
         ]
       },
       {
-        "id": "ppe",
-        "title": "Personal Protective Equipment",
+        "id": "challenges",
+        "title": "Common Challenges in Cell Culture",
         "content": [
           {
             "type": "p",
-            "text": "Proper PPE—including gloves, lab coats, face shields, and respirators—acts as a critical barrier against exposure. The choice of PPE depends on the biosafety level (BSL) of the work being conducted."
+            "text": "Despite its routine nature, cell culture comes with challenges. Contamination is one of the most common problems, often recognized by cloudy media or an unusual odor. Overgrown cultures can also suffer from stress, changing their shape and behavior."
+          },
+          {
+            "type": "p",
+            "text": "Even experienced scientists must troubleshoot issues related to slow growth or unexpected results, which makes patience and precision key traits in this field."
           }
         ]
       },
       {
-        "id": "decon",
-        "title": "Decontamination and Waste Management",
+        "id": "real-world-applications",
+        "title": "Applications of Cell Culture",
         "content": [
           {
             "type": "p",
-            "text": "Autoclaving is the gold standard for deactivating biohazardous waste. For surface decontamination, chemical disinfectants such as bleach and hydrogen peroxide vapor are used."
+            "text": "Cell culture has countless applications across multiple fields:"
+          },
+          {
+            "type": "h3",
+            "text": "Biomedical Research"
+          },
+          {
+            "type": "p",
+            "text": "In biomedical research, it allows scientists to study disease mechanisms, test new drugs, and explore genetic functions."
+          },
+          {
+            "type": "h3",
+            "text": "Biotechnology"
+          },
+          {
+            "type": "p",
+            "text": "In biotechnology, cultured cells are used to produce vaccines, enzymes, and therapeutic antibodies."
+          },
+          {
+            "type": "h3",
+            "text": "Regenerative Medicine"
+          },
+          {
+            "type": "p",
+            "text": "In regenerative medicine, they serve as the foundation for developing tissues and organs that can one day repair or replace damaged parts of the human body."
+          },
+          {
+            "type": "h3",
+            "text": "Education"
+          },
+          {
+            "type": "p",
+            "text": "Even in education, cell culture is an essential teaching tool that helps students understand how cells behave and interact with their environment."
+          }
+        ]
+      },
+      {
+        "id": "conclusion",
+        "title": "The Impact of Cell Culture",
+        "content": [
+          {
+            "type": "p",
+            "text": "Ultimately, cell culture has transformed the landscape of biological and medical research. By providing a way to observe cells directly, it has paved the way for breakthroughs in cancer treatment, vaccine development, and biotechnology."
+          },
+          {
+            "type": "p",
+            "text": "For beginners, learning cell culture opens the door to a wide range of scientific and industrial careers. It remains a cornerstone skill of modern life sciences—one that continues to shape the future of medicine and discovery."
+          }
+        ]
+      }
+    ],
+    "resources": {
+      "whitepapers": [],
+      "videos": []
+    }
+  },
+  {
+    "slug": "/resources/articles/cell-culture-vaccine-production",
+    "title": "Cell Culture in Vaccine Production: How Modern Vaccines Are Made",
+    "description": "Explore how cell culture techniques enable large-scale vaccine manufacturing, from virus replication to purification and quality control.",
+    "date": "2025-03-12",
+    "readMins": 7,
+    "tags": [
+      "Cell Culture",
+      "Vaccine Production",
+      "Biotechnology",
+      "Biomanufacturing"
+    ],
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "The Role of Cell Culture in Vaccine Manufacturing",
+        "content": [
+          {
+            "type": "p",
+            "text": "Vaccines have transformed global health by preventing millions of infections each year, but behind every dose is a long and precise manufacturing process. One of the most important steps in this process is cell culture, a technique that allows viruses to grow in controlled laboratory conditions."
+          },
+          {
+            "type": "p",
+            "text": "Because most vaccines rely on weakened, inactivated, or genetically modified viruses, manufacturers need a safe and reliable way to produce these viruses at large scale. Cell culture has become the backbone of this process, enabling scientists and pharmaceutical companies to produce high-quality vaccines efficiently and consistently."
+          }
+        ]
+      },
+      {
+        "id": "why-cell-culture",
+        "title": "Why Cell Culture Is Essential for Vaccines",
+        "content": [
+          {
+            "type": "p",
+            "text": "Cell culture involves growing living cells outside of the body, in flasks, bioreactors, or specialized vessels. For vaccine production, these cells act as hosts that allow viruses to infect, replicate, and multiply."
+          },
+          {
+            "type": "p",
+            "text": "Unlike bacteria, many viruses cannot grow on their own—they need living cells to reproduce. This is why cell culture is essential. By providing a controlled environment with the right temperature, nutrients, and gases, scientists can cultivate virus particles in large quantities while closely monitoring safety and quality at every step."
+          }
+        ]
+      },
+      {
+        "id": "cell-types",
+        "title": "Cell Lines Used in Vaccine Production",
+        "content": [
+          {
+            "type": "p",
+            "text": "Different types of cells can be used depending on the vaccine being manufactured. Historically, embryonated chicken eggs were the standard for producing influenza vaccines, but egg-based systems come with limitations such as long production times, variability, and the risk of allergic reactions."
+          },
+          {
+            "type": "p",
+            "text": "Modern vaccine production increasingly uses mammalian cell lines such as Vero cells, MDCK cells, and HEK293 cells. These cell lines are stable, easy to grow, and highly adaptable to industrial bioreactor systems. They also reduce the risk of contamination and allow faster production, making them ideal for rapid responses to emerging viruses."
+          }
+        ]
+      },
+      {
+        "id": "production-process",
+        "title": "The Vaccine Production Process",
+        "content": [
+          {
+            "type": "p",
+            "text": "During production, the chosen cells are first expanded to large numbers. Once they reach the right density, they are exposed to the virus strain that will be used for the vaccine. The virus enters the cells and begins to replicate, using the cell's internal machinery."
+          },
+          {
+            "type": "p",
+            "text": "Over time, the culture accumulates millions—or even billions—of viral particles. Once replication reaches the desired level, scientists harvest the virus-rich fluid and begin the next stages of purification. Depending on the type of vaccine, the virus may be chemically inactivated, heat-killed, attenuated, or modified to express specific antigens needed to trigger immunity."
+          }
+        ]
+      },
+      {
+        "id": "purification",
+        "title": "Purification and Quality Control",
+        "content": [
+          {
+            "type": "p",
+            "text": "After harvesting, manufacturers purify the viral material to remove cell debris, impurities, and contaminants. This is followed by filtration, concentration, and formulation with stabilizers or adjuvants. Every step is tightly regulated to meet strict safety and quality standards."
+          },
+          {
+            "type": "p",
+            "text": "One of the biggest advantages of using cell culture systems is the high degree of control they offer. Because conditions such as temperature, pH, and dissolved oxygen can be precisely maintained, the resulting vaccines are consistent from batch to batch, which is crucial for large-scale production."
+          }
+        ]
+      },
+      {
+        "id": "modern-vaccines",
+        "title": "Cell Culture in Next-Generation Vaccines",
+        "content": [
+          {
+            "type": "p",
+            "text": "Cell culture also plays a key role in the development of newer vaccine technologies. For example, viral vector vaccines—such as those used for Ebola or COVID-19—require cells to produce harmless engineered viruses that deliver genetic instructions to the immune system."
+          },
+          {
+            "type": "p",
+            "text": "Even mRNA vaccines, which do not contain actual virus particles, rely on cell culture during research and testing phases to create proteins and viral components for evaluation. In many ways, cell culture sits at the center of nearly every major innovation in vaccine science."
+          }
+        ]
+      },
+      {
+        "id": "scalability",
+        "title": "Scalability and Rapid Response",
+        "content": [
+          {
+            "type": "p",
+            "text": "In addition to reliability, cell culture offers scalability. Bioreactors ranging from a few liters to several thousand liters can be used to produce large quantities of viral material in a relatively short time. This makes it possible to respond more quickly during outbreaks, pandemics, or seasonal surges."
+          },
+          {
+            "type": "p",
+            "text": "It also reduces dependence on traditional egg-based systems that are slower and more labor-intensive. The shift toward cell-based production has made vaccine manufacturing more flexible and resilient, especially in times of global demand."
+          }
+        ]
+      },
+      {
+        "id": "future",
+        "title": "The Future of Cell Culture in Vaccine Production",
+        "content": [
+          {
+            "type": "p",
+            "text": "Today, cell culture remains a cornerstone of vaccine production and continues to evolve as technology advances. Automation, single-use bioreactors, and improved cell lines are making the process faster, safer, and more efficient."
+          },
+          {
+            "type": "p",
+            "text": "As new viruses emerge and public health needs expand, cell culture will remain essential for delivering reliable vaccines to communities worldwide. Understanding how this process works highlights the remarkable intersection of biology, engineering, and medicine that makes modern immunization possible."
           }
         ]
       }
@@ -75,166 +317,6 @@
       "whitepapers": [],
       "videos": []
     },
-    "featuredImage": {
-      "url": "monkeypox-vaccine-healthcare-hands-doctor-nurse.jpg",
-      "alt": "Healthcare professional holding vaccine vial",
-      "caption": "Modern vaccine production relies on advanced cell culture techniques"
-    }
-  },
-  {
-    "slug": "/resources/articles/bsl-and-risk-assessment",
-    "title": "Understanding Biosafety Levels (BSL): The Cornerstone of Effective Risk Assessment",
-    "description": "How BSL-1 to BSL-4 and dynamic risk assessment combine to select controls and keep labs and communities safe.",
-    "date": "2025-03-18",
-    "readMins": 9,
-    "tags": [
-      "BSL",
-      "Risk Assessment"
-    ],
-    "sections": [
-      {
-        "id": "intro",
-        "title": "Introduction",
-        "content": [
-          {
-            "type": "p",
-            "text": "In the world of biological research and clinical diagnostics, safety is not a matter of chance—it is a matter of choice. This framework protects personnel, the environment, and the community from accidental exposure to infectious agents. At its heart: Biosafety Levels (BSL) and Risk Assessment."
-          }
-        ]
-      },
-      {
-        "id": "what-bsl",
-        "title": "What are Biosafety Levels (BSL)?",
-        "content": [
-          {
-            "type": "p",
-            "text": "BSL-1 through BSL-4 are tiers of biocontainment defined by practices, safety equipment, and facility design."
-          },
-          {
-            "type": "ul",
-            "items": [
-              "Laboratory Practices and Techniques: SOPs for safe handling.",
-              "Safety Equipment: Primary barriers such as BSCs and PPE.",
-              "Facility Design and Construction: Ventilation, airlocks, waste treatment."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "levels",
-        "title": "BSL-1 to BSL-4 Overview",
-        "content": [
-          {
-            "type": "ul",
-            "items": [
-              "BSL-1: Non-pathogenic agents; standard microbiology practices.",
-              "BSL-2: Moderate-risk agents (e.g., S. aureus, HBV); enhanced PPE, signage, Class I/II BSCs.",
-              "BSL-3: Serious or lethal respiratory agents (e.g., M. tuberculosis, SARS-CoV-2); negative pressure, restricted access, non-recirculated exhaust.",
-              "BSL-4: High-risk, no treatment/vaccine (e.g., Ebola, Marburg); maximum containment, positive-pressure suits."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "risk",
-        "title": "The Role of Risk Assessment",
-        "content": [
-          {
-            "type": "p",
-            "text": "Selecting the appropriate BSL results from a dynamic risk assessment of agent hazards, procedures, personnel, and facility capabilities."
-          },
-          {
-            "type": "ul",
-            "items": [
-              "Agent Hazards: Pathogenicity, infectious dose, treatment/vaccines.",
-              "Procedure Hazards: Aerosols, volumes, concentrations.",
-              "Personnel Competence: Training, proficiency, immunological status.",
-              "Facility & Equipment: Primary/secondary containment capacity."
-            ]
-          }
-        ]
-      },
-      {
-        "id": "relationship",
-        "title": "How BSL and Risk Assessment Work Together",
-        "content": [
-          {
-            "type": "p",
-            "text": "BSL defines baseline controls; risk assessment decides the level and additional precautions for specific procedures (e.g., aerosol-generating work may require escalation)."
-          }
-        ]
-      },
-      {
-        "id": "conclusion",
-        "title": "Conclusion",
-        "content": [
-          {
-            "type": "p",
-            "text": "A safe lab integrates prescribed BSL controls with continuous risk assessment. Re-evaluate risks with every new experiment, agent, or procedure change."
-          }
-        ]
-      },
-      {
-        "id": "resources",
-        "title": "Resources",
-        "content": [
-          {
-            "type": "h3",
-            "text": "Whitepapers"
-          },
-          {
-            "type": "links",
-            "items": [
-              {
-                "label": "Guide to Biosafety and Biological Safety Cabinets",
-                "url": "https://www.escolifesciences.com/pdf/9010018%20A%20Guide%20to%20Biosafety%20%26%20Biological%20Safety%20Cabinets_vE_130824.pdf"
-              },
-              {
-                "label": "BSC Maintenance Tips and Procedure",
-                "url": "https://www.escolifesciences.com/pdf/BSC%20%26%20LFC%20Maintence%20Tips%20and%20Procedures-V.B.-Mar2021.pdf"
-              },
-              {
-                "label": "Safe Work Practices in a Biosafety Cabinet",
-                "url": "https://www.escolifesciences.com/products/class-ii-biological-safety-cabinet/streamline-e-series-g4-class-ii-biological-safety-cabinet"
-              },
-              {
-                "label": "Repair or Replace Your Old Biosafety Cabinet?",
-                "url": "https://www.escolifesciences.com/pdf/Repair%20or%20Replace%20Your%20Old%20Biosafety%20Cabinet-intheloop_LR.pdf"
-              }
-            ]
-          },
-          {
-            "type": "h3",
-            "text": "Videos"
-          },
-          {
-            "type": "links",
-            "items": [
-              {
-                "label": "Inside the Sciences Podcast Episode 1: Biosafety Cabinets | Protecting Science, Protecting You",
-                "url": "https://www.youtube.com/watch?v=vss9HS5DQQ8&t=570s"
-              },
-              {
-                "label": "Biological Safety Cabinet | What You Need | Esco Scientific",
-                "url": "https://www.youtube.com/watch?v=uaydXcyUZhI&list=PLT9h-p38eRmubWGpKsNbKpJzBZXrbIvF8&index=21"
-              },
-              {
-                "label": "Working Safely in your Biological Safety Cabinets: Dealing with Spills | Esco Scientific",
-                "url": "https://www.youtube.com/watch?v=ZnUW1N-JJz8"
-              },
-              {
-                "label": "Biological Safety Cabinets | What to Keep in Mind for Stable Airflow",
-                "url": "https://www.youtube.com/watch?v=IkO3ABNT_M8"
-              },
-              {
-                "label": "Biosafety Cabinet | Tips to Maintain its Efficiency | Esco Scientific",
-                "url": "https://www.youtube.com/watch?v=voU9E2_vxQ0"
-              }
-            ]
-          }
-        ]
-      }
-    ],
     "featuredImage": {
       "url": "ebi_hero.jpg",
       "alt": "Healthcare professional holding vaccine vial",
