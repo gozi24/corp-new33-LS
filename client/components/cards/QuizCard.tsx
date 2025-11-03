@@ -32,8 +32,8 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
           </span>
           <span className="text-xs bg-[hsl(var(--primary))]/5 px-2 py-1">
             {quiz.skillLevel}
-          </span>*/}
-        </div>
+          </span>
+        </div>*/}
       </CardHeader>
       <div className="px-4 sm:px-6 pb-4 sm:pb-6 grid grid-cols-2 gap-3 text-[10px] sm:text-xs">
         <div>
