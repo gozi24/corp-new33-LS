@@ -10,6 +10,9 @@ import {
   ArrowRight,
   type LucideIcon,
 } from "lucide-react";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.Resources;
 
 type ResourceCard = {
   href: string;
@@ -68,11 +71,11 @@ export default function Resources() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Knowledge Hub"
-        description="A curated collection of learning materials, videos, and case studies to help you stay informed about biosafety best practices."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Knowledge Hub" }]}
-        backgroundImage="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg"
-        gradient="linear-gradient(135deg, #020113 0%, #003BA3)"
+        backgroundImage={pageConfig.backgroundImage}
+        gradient={pageConfig.gradient}
       />
 
       <section className="container mx-auto px-0 lg:px-4 py-12 md:py-16">

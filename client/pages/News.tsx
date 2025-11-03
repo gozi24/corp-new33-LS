@@ -7,6 +7,9 @@ import { cn } from "@/lib/utils";
 import { LoadingIndicator } from "@/components/ui/loading-indicator";
 import type { NewsMeta } from "@/entities/news";
 import { NewsCard } from "@/components/cards/NewsCard";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.News;
 
 export default function News() {
   const [q, setQ] = useState("");
@@ -78,8 +81,8 @@ export default function News() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="News"
-        description="Updates, product news, and practical insights from our team and partners."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "News" }]}
       />
 
