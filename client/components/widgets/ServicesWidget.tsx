@@ -58,9 +58,7 @@ export default function ServicesWidget() {
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--primary))]/5 to-[hsl(var(--primary))]/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                {service.backgroundImage && (
-                  <div className="absolute inset-0 bg-black/40" />
-                )}
+                <div className="absolute inset-0 bg-black/40" />
 
                 <div className="relative z-10 p-4 md:p-8 h-full flex flex-col justify-end min-h-64 md:min-h-96">
                   <h3
