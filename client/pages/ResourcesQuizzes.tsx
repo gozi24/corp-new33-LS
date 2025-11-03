@@ -5,6 +5,9 @@ import { LoadingIndicator } from "@/components/ui/loading-indicator";
 import { cn } from "@/lib/utils";
 import { QuizCard } from "@/components/cards/QuizCard";
 import type { QuizMeta } from "@/entities/quiz";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.ResourcesQuizzes;
 
 export default function ResourcesQuizzes() {
   const [items, setItems] = useState<QuizMeta[] | null>(null);
@@ -70,8 +73,8 @@ export default function ResourcesQuizzes() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Quizzes"
-        description="Challenge your biosafety knowledge with interactive quizzes and track your progress."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Knowledge Hub", href: "/resources" },

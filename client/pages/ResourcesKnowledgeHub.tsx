@@ -8,6 +8,9 @@ import { LoadingIndicator } from "@/components/ui/loading-indicator";
 import { cn } from "@/lib/utils";
 import type { ArticleMeta } from "@/entities/article";
 import { ArticleCard } from "@/components/cards/ArticleCard";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.ResourcesKnowledgeHub;
 
 export default function KnowledgeHub() {
   const [q, setQ] = useState("");
@@ -87,8 +90,8 @@ export default function KnowledgeHub() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Articles"
-        description="Guides, articles and whitepapers on biosafety and lab practices."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Knowledge Hub", href: "/resources" },
