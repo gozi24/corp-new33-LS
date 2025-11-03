@@ -28,7 +28,7 @@ export default function About() {
           <div className="relative space-y-8">
             <div>
               <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
-              <h1 className="text-3xl font-bold leading-tight text-[hsl(205_100%_12%)] md:text-5xl">
+              <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold leading-tight text-[hsl(205_100%_12%)]">
                 {siteConfig.siteName}
               </h1>
             </div>
