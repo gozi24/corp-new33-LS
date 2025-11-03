@@ -97,7 +97,7 @@ export default function KnowledgeArticle() {
     return <div className="container mx-auto px-4 py-12">Loading…</div>;
   }
 
-  const { title, description, date, readMins, sections } = article;
+  const { title, description, date, readMins, sections, featuredImage } = article;
 
   return (
     <div className="bg-white text-slate-900">
