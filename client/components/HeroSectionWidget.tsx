@@ -135,12 +135,12 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 md:gap-4">
             {config.cta.map((button) => (
               <Button
                 key={button.text}
                 asChild
-                size="lg"
+                size="md"
                 variant={button.variant}
                 className={
                   button.variant === "primary"
