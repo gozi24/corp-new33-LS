@@ -52,9 +52,7 @@ export default function ServicesWidget() {
                 <div
                   className="absolute inset-0 transition-transform duration-300 group-hover:scale-105"
                   style={{
-                    backgroundImage: service.backgroundImage
-                      ? `url(${service.backgroundImage})`
-                      : undefined,
+                    backgroundImage: `url(${service.backgroundImage || "/placeholder.svg"})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
