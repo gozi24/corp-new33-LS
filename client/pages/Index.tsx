@@ -8,8 +8,8 @@ import KnowledgeHubWidget from "@/components/widgets/KnowledgeHubWidget";
 import EmailSubscriptionWidget from "@/components/widgets/EmailSubscriptionWidget";
 import ContactForm from "@/components/ContactForm";
 import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
+import AboutSection from "@/components/sections/AboutSection";
 import { siteConfig } from "@/config/config";
-import homeAboutData from "@/config/data/homeAbout.json";
 
 export default function Index() {
   return (
