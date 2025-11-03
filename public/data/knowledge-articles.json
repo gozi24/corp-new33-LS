@@ -335,11 +335,67 @@
             "text": "Ultimately, cell culture has transformed the landscape of biological and medical research. By providing a way to observe cells directly, it has paved the way for breakthroughs in cancer treatment, vaccine development, and biotechnology. For beginners, learning cell culture opens the door to a wide range of scientific and industrial careers. It remains a cornerstone skill of modern life sciences—one that continues to shape the future of medicine and discovery."
           }
         ]
+      },
+      {
+        "id": "resources",
+        "title": "Resources",
+        "content": [
+          {
+            "type": "h3",
+            "text": "Whitepapers"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Guide to Biosafety and Biological Safety Cabinets",
+                "url": "https://www.escolifesciences.com/pdf/9010018%20A%20Guide%20to%20Biosafety%20%26%20Biological%20Safety%20Cabinets_vE_130824.pdf"
+              },
+              {
+                "label": "BSC Maintenance Tips and Procedure",
+                "url": "https://www.escolifesciences.com/pdf/BSC%20%26%20LFC%20Maintence%20Tips%20and%20Procedures-V.B.-Mar2021.pdf"
+              },
+              {
+                "label": "Safe Work Practices in a Biosafety Cabinet",
+                "url": "https://www.escolifesciences.com/products/class-ii-biological-safety-cabinet/streamline-e-series-g4-class-ii-biological-safety-cabinet"
+              },
+              {
+                "label": "Repair or Replace Your Old Biosafety Cabinet?",
+                "url": "https://www.escolifesciences.com/pdf/Repair%20or%20Replace%20Your%20Old%20Biosafety%20Cabinet-intheloop_LR.pdf"
+              }
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Videos"
+          },
+          {
+            "type": "links",
+            "items": [
+              {
+                "label": "Inside the Sciences Podcast Episode 1: Biosafety Cabinets | Protecting Science, Protecting You",
+                "url": "https://www.youtube.com/watch?v=vss9HS5DQQ8&t=570s"
+              },
+              {
+                "label": "Biological Safety Cabinet | What You Need | Esco Scientific",
+                "url": "https://www.youtube.com/watch?v=uaydXcyUZhI&list=PLT9h-p38eRmubWGpKsNbKpJzBZXrbIvF8&index=21"
+              },
+              {
+                "label": "Working Safely in your Biological Safety Cabinets: Dealing with Spills | Esco Scientific",
+                "url": "https://www.youtube.com/watch?v=ZnUW1N-JJz8"
+              },
+              {
+                "label": "Biological Safety Cabinets | What to Keep in Mind for Stable Airflow",
+                "url": "https://www.youtube.com/watch?v=IkO3ABNT_M8"
+              },
+              {
+                "label": "Biosafety Cabinet | Tips to Maintain its Efficiency | Esco Scientific",
+                "url": "https://www.youtube.com/watch?v=voU9E2_vxQ0"
+              }
+            ]
+          }
+        ]
       }
-    ],
-    "resources": {
-      "whitepapers": [],
-      "videos": []
-    }
+    ]
   }
 ]
