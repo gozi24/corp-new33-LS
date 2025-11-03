@@ -19,9 +19,6 @@ import {
 import { Link } from "react-router-dom";
 import { Button } from "@/components/Button";
 import servicesData from "@/config/data/services.json";
-import trainingsData from "@/config/data/trainings.json";
-import commissioningData from "@/config/data/commissioning.json";
-import validationData from "@/config/data/validation.json";
 
 const ICONS: Record<string, any> = {
   Headset,
