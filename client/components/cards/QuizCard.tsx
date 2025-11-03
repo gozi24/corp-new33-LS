@@ -11,7 +11,7 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
   return (
     <Card className="h-full flex flex-col overflow-hidden rounded-lg border border-slate-200/70 bg-white shadow-sm transition-shadow hover:shadow">
       <div className="bg-white">
-        <AspectRatio ratio={6 / 2}>
+        <AspectRatio ratio={5 / 2}>
           <img
             src={quiz.image?.url ?? "/placeholder.svg"}
             alt={quiz.image?.alt ?? quiz.title}
