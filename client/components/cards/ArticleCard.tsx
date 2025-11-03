@@ -19,7 +19,7 @@ export function ArticleCard({ a }: { a: ArticleMeta }) {
       <div className="bg-white">
         <AspectRatio ratio={16 / 9}>
           <img
-            src={a?.featuredImage?.url || "/placeholder.svg"}
+            src={a?.featuredImage?.url }
             alt={a.title}
             className="h-full w-full object-cover"
             loading="lazy"
