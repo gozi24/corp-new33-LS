@@ -49,7 +49,7 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
           </dd>
         </div>
       </div>
-      <div className="mt-auto px-4 sm:px-6 pb-4 sm:pb-6">
+      <div className="text-base mt-auto px-4 sm:px-6 pb-4 sm:pb-6">
         <Button asChild variant="primary" size="md" className="w-full">
           <Link to={`/resources/quizzes/${quiz.slug}`}>Start quiz</Link>
         </Button>
