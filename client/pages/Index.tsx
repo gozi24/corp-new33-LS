@@ -161,7 +161,9 @@ function BenefitCard({ title, descr }: { title: string; descr: string }) {
       <h3 className="text-base md:text-2xl font-bold text-[hsl(var(--primary))] mb-2 md:mb-4">
         {title}
       </h3>
-      <p className="text-sm md:text-lg leading-relaxed text-slate-700">{descr}</p>
+      <p className="text-sm md:text-lg leading-relaxed text-slate-700">
+        {descr}
+      </p>
     </div>
   );
 }

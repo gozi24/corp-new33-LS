@@ -19,8 +19,14 @@
         "options": [
           { "id": "A", "label": "To store chemicals safely when not in use." },
           { "id": "B", "label": "To protect experiments from contamination." },
-          { "id": "C", "label": "To contain and exhaust hazardous chemical vapors away from the user." },
-          { "id": "D", "label": "To provide a sterile workspace for biological samples." }
+          {
+            "id": "C",
+            "label": "To contain and exhaust hazardous chemical vapors away from the user."
+          },
+          {
+            "id": "D",
+            "label": "To provide a sterile workspace for biological samples."
+          }
         ],
         "answerId": "C",
         "explanation": "The primary function of a fume hood is user protection from inhalation of hazards. While it can sometimes protect samples, that is not its main purpose."
@@ -41,9 +47,18 @@
         "id": "q3",
         "prompt": "You need to dispose of a broken glass beaker that contained a non-hazardous solution. What is the correct procedure?",
         "options": [
-          { "id": "A", "label": "Throw it directly into the regular trash bin." },
-          { "id": "B", "label": "Use a brush and dustpan to collect the pieces and dispose of them in a designated sharps container." },
-          { "id": "C", "label": "Pick up the large pieces with your hands and wipe the area with a paper towel." },
+          {
+            "id": "A",
+            "label": "Throw it directly into the regular trash bin."
+          },
+          {
+            "id": "B",
+            "label": "Use a brush and dustpan to collect the pieces and dispose of them in a designated sharps container."
+          },
+          {
+            "id": "C",
+            "label": "Pick up the large pieces with your hands and wipe the area with a paper towel."
+          },
           { "id": "D", "label": "Leave it for the cleaning staff." }
         ],
         "answerId": "B",
@@ -53,9 +68,15 @@
         "id": "q4",
         "prompt": "What does the 'NFPA 704 Diamond' on a chemical container indicate?",
         "options": [
-          { "id": "A", "label": "The manufacturer's lot number and expiration date." },
+          {
+            "id": "A",
+            "label": "The manufacturer's lot number and expiration date."
+          },
           { "id": "B", "label": "The chemical's molecular weight and purity." },
-          { "id": "C", "label": "The hazards of the chemical (health, flammability, instability)." },
+          {
+            "id": "C",
+            "label": "The hazards of the chemical (health, flammability, instability)."
+          },
           { "id": "D", "label": "The appropriate storage temperature." }
         ],
         "answerId": "C",
@@ -66,8 +87,14 @@
         "prompt": "Before using a piece of equipment like a centrifuge or autoclave, you should:",
         "options": [
           { "id": "A", "label": "Assume it's in working order and proceed." },
-          { "id": "B", "label": "Ask a colleague if they've used it recently." },
-          { "id": "C", "label": "Read the SOP (Standard Operating Procedure) and perform a visual inspection." },
+          {
+            "id": "B",
+            "label": "Ask a colleague if they've used it recently."
+          },
+          {
+            "id": "C",
+            "label": "Read the SOP (Standard Operating Procedure) and perform a visual inspection."
+          },
           { "id": "D", "label": "Only check it if it looks old." }
         ],
         "answerId": "C",
@@ -79,8 +106,14 @@
         "options": [
           { "id": "A", "label": "Go to the nearest hospital emergency room." },
           { "id": "B", "label": "Call your supervisor." },
-          { "id": "C", "label": "Immediately use the emergency eyewash station for at least 15 minutes." },
-          { "id": "D", "label": "Try to neutralize the chemical with another solution." }
+          {
+            "id": "C",
+            "label": "Immediately use the emergency eyewash station for at least 15 minutes."
+          },
+          {
+            "id": "D",
+            "label": "Try to neutralize the chemical with another solution."
+          }
         ],
         "answerId": "C",
         "explanation": "Speed is critical in an eye emergency. Flushing with water for a prolonged period (15 minutes is standard) is the first aid response before seeking medical attention."
@@ -101,9 +134,18 @@
         "id": "q8",
         "prompt": "When transporting chemicals outside of the lab (e.g., to another room), you should:",
         "options": [
-          { "id": "A", "label": "Carry the bottle by its neck for secure grip." },
-          { "id": "B", "label": "Place them in a secondary container (like a bucket or acid carry bucket) to contain spills." },
-          { "id": "C", "label": "Quickly walk them to the destination to minimize exposure." },
+          {
+            "id": "A",
+            "label": "Carry the bottle by its neck for secure grip."
+          },
+          {
+            "id": "B",
+            "label": "Place them in a secondary container (like a bucket or acid carry bucket) to contain spills."
+          },
+          {
+            "id": "C",
+            "label": "Quickly walk them to the destination to minimize exposure."
+          },
           { "id": "D", "label": "Only move them during quiet hours." }
         ],
         "answerId": "B",

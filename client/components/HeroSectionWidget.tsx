@@ -33,8 +33,7 @@ interface HeroSectionWidgetProps {
 const defaultConfig: Required<HeroSectionWidgetProps> = {
   title: `Welcome to ${siteConfig.siteName}!`,
   description: `Safety in any laboratory is fundamental. The ${siteConfig.siteName} was established to be your partner in achieving it. We provide:`,
-  backgroundImage:
-    "/ebi_hero.jpg",
+  backgroundImage: "/ebi_hero.jpg",
   backgroundImageAlt:
     "Bright and sterile laboratory featuring high-tech research equipment and medical professionals at work",
   backgroundGradFrom: "#020113",

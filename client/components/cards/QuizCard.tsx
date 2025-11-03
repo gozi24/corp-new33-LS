@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/Button";
-import {
-  Card,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 import type { QuizMeta } from "@/entities/quiz";
 
 export function QuizCard({ quiz }: { quiz: QuizMeta }) {
@@ -25,7 +22,9 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
         <h3 className="text-lg sm:text-lg font-semibold sm:font-bold leading-tight text-[hsl(var(--primary))] mb-1">
           {quiz.title}
         </h3>
-        <p className="text-base sm:text-sm text-slate-600 mb-3">{quiz.subtitle}</p>
+        <p className="text-base sm:text-sm text-slate-600 mb-3">
+          {quiz.subtitle}
+        </p>
         {/*<div className="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-medium sm:font-semibold text-[hsl(var(--primary))] uppercase tracking-wide">
           <span className="text-xs bg-[hsl(var(--primary))]/5 px-2 py-1">
             {quiz.category}
@@ -37,13 +36,17 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
       </CardHeader>
       <div className="px-4 sm:px-6 pb-4 sm:pb-6 grid grid-cols-2 gap-3 text-[10px] sm:text-xs">
         <div>
-          <dt className="text-base font-medium text-slate-600 mb-1">Questions</dt>
+          <dt className="text-base font-medium text-slate-600 mb-1">
+            Questions
+          </dt>
           <dd className="text-lg sm:text-lg font-semibold sm:font-bold text-[hsl(var(--primary))]">
             {quiz.questionCount}
           </dd>
         </div>
         <div>
-          <dt className="text-base font-medium text-slate-600 mb-1">Duration</dt>
+          <dt className="text-base font-medium text-slate-600 mb-1">
+            Duration
+          </dt>
           <dd className="text-lg sm:text-lg font-semibold sm:font-bold text-[hsl(var(--primary))]">
             ~{quiz.durationMinutes} min
           </dd>
