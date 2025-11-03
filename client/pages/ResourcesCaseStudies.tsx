@@ -9,7 +9,11 @@ export default function CaseStudies() {
       <PageBanner
         title={pageConfig.title}
         description={pageConfig.description}
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Case Studies" }]}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Resources", href: "/resources" },
+          { label: "Case Studies" },
+        ]}
       />
 
       <section className="container mx-auto px-4 py-12 md:py-16">

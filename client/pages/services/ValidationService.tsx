@@ -12,7 +12,11 @@ export default function ValidationService() {
     <div className="bg-white text-slate-900">
       <PageBanner
         title={pageConfig.titleSource ? validationData.title : pageConfig.title}
-        description={pageConfig.descriptionSource ? validationData.description : pageConfig.description}
+        description={
+          pageConfig.descriptionSource
+            ? validationData.description
+            : pageConfig.description
+        }
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },

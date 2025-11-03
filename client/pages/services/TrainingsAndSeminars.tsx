@@ -19,7 +19,11 @@ export default function TrainingsAndSeminars() {
     <div className="bg-white text-slate-900">
       <PageBanner
         title={pageConfig.titleSource ? trainingsData.title : pageConfig.title}
-        description={pageConfig.descriptionSource ? trainingsData.description : pageConfig.description}
+        description={
+          pageConfig.descriptionSource
+            ? trainingsData.description
+            : pageConfig.description
+        }
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },

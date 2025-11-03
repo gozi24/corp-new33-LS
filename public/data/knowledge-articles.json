@@ -1,4 +1,5 @@
-[{
+[
+  {
     "slug": "/resources/articles/cell-culture-vaccine-production",
     "title": "Cell Culture in Vaccine Production: How Modern Vaccines Are Made",
     "description": "Explore how cell culture techniques enable large-scale vaccine manufacturing, from virus replication to purification and quality control.",
@@ -134,4 +135,4 @@
       "caption": "Modern vaccine production relies on advanced cell culture techniques"
     }
   }
-  ]
+]

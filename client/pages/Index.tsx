@@ -23,7 +23,7 @@ export default function Index() {
           <AboutSection />
         </div>
       </section>
-      
+
       {/* Services */}
       <ServicesWidget />
 
@@ -51,7 +51,6 @@ export default function Index() {
           <FeaturedProductsWidget />
         </div>
       </section>*/}
-
 
       {/* Benefits - Color Block Section */}
       <section className="py-12 md:py-28">

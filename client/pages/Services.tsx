@@ -43,7 +43,11 @@ export default function Services() {
     <div className="bg-white text-slate-900">
       <PageBanner
         title={pageConfig.titleSource ? servicesData.title : pageConfig.title}
-        description={pageConfig.descriptionSource ? servicesData.description : pageConfig.description}
+        description={
+          pageConfig.descriptionSource
+            ? servicesData.description
+            : pageConfig.description
+        }
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },
