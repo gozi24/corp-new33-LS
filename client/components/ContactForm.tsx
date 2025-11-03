@@ -24,42 +24,42 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className="bg-transparent">
-      <div className="grid gap-8">
-        <div className="border-b border-slate-300 pb-8">
-          <div className="text-slate-700 text-base leading-relaxed">
+      <div className="grid gap-4 md:gap-8">
+        <div className="border-b border-slate-300 pb-4 md:pb-8">
+          <div className="text-slate-700 text-sm md:text-base leading-relaxed">
             <ContactsDetailsWidget />
           </div>
         </div>
 
-        <label className="grid gap-2 text-base font-semibold">
+        <label className="grid gap-2 text-sm md:text-base font-semibold">
           <span>Name</span>
           <input
             name="name"
             required
-            className="h-12 bg-white text-slate-900 border-2 border-slate-300 px-4 outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] focus:border-transparent"
+            className="h-10 md:h-12 bg-white text-slate-900 border-2 border-slate-300 px-4 outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] focus:border-transparent text-sm md:text-base"
           />
         </label>
-        <label className="grid gap-2 text-base font-semibold">
+        <label className="grid gap-2 text-sm md:text-base font-semibold">
           <span>Phone or email</span>
           <input
             name="contact"
             required
-            className="h-12 bg-white text-slate-900 border-2 border-slate-300 px-4 outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] focus:border-transparent"
+            className="h-10 md:h-12 bg-white text-slate-900 border-2 border-slate-300 px-4 outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] focus:border-transparent text-sm md:text-base"
           />
         </label>
-        <label className="grid gap-2 text-base font-semibold">
+        <label className="grid gap-2 text-sm md:text-base font-semibold">
           <span>Message</span>
           <textarea
             name="message"
-            rows={4}
-            className="bg-white text-slate-900 border-2 border-slate-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] focus:border-transparent"
+            rows={3}
+            className="bg-white text-slate-900 border-2 border-slate-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[hsl(var(--primary))] focus:border-transparent text-sm md:text-base"
           />
         </label>
 
         <Button
           variant="primary"
-          size="lg"
-          className="bg-[hsl(var(--primary))] hover:bg-[hsl(205_100%_20%)]"
+          size="md"
+          className="bg-[hsl(var(--primary))] hover:bg-[hsl(205_100%_20%)] md:size-lg"
         >
           Send request
         </Button>
