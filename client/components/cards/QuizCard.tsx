@@ -26,13 +26,13 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
           {quiz.title}
         </h3>
         <p className="text-base sm:text-sm text-slate-600 mb-3">{quiz.subtitle}</p>
-        <div className="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-medium sm:font-semibold text-[hsl(var(--primary))] uppercase tracking-wide">
+        {/*<div className="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-medium sm:font-semibold text-[hsl(var(--primary))] uppercase tracking-wide">
           <span className="text-xs bg-[hsl(var(--primary))]/5 px-2 py-1">
             {quiz.category}
           </span>
           <span className="text-xs bg-[hsl(var(--primary))]/5 px-2 py-1">
             {quiz.skillLevel}
-          </span>
+          </span>*/}
         </div>
       </CardHeader>
       <div className="px-4 sm:px-6 pb-4 sm:pb-6 grid grid-cols-2 gap-3 text-[10px] sm:text-xs">
