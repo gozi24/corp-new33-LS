@@ -59,7 +59,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
         <Button
           variant="primary"
           size="lg"
-          className="bg-brand-secondary hover:bg-brand-secondary/90"
+          className="bg-[hsl(var(--primary))] hover:bg-[hsl(205_100%_20%)]"
         >
           Send request
         </Button>
