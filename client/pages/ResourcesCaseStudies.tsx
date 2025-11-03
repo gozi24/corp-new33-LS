@@ -1,11 +1,14 @@
 import { PageBanner } from "@/components/layout/PageBanner";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.ResourcesCaseStudies;
 
 export default function CaseStudies() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Case Studies"
-        description="Real-world implementations and learnings from Esco projects."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Resources", href: "/resources" }, { label: "Case Studies" }]}
       />
 

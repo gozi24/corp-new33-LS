@@ -1,12 +1,15 @@
 import { PageBanner } from "@/components/layout/PageBanner";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.Trainings;
 
 export default function Trainings() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="About Trainings"
-        description="Expert-led programs delivered from our dedicated learning centers and through global offices."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },

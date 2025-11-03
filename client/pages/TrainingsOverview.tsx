@@ -10,6 +10,9 @@ import {
   CheckCircle,
   ArrowRight,
 } from "lucide-react";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.TrainingsOverview;
 
 type TrainingCard = {
   href: string;
@@ -65,8 +68,8 @@ export default function TrainingsOverview() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Services"
-        description="Comprehensive training programs and resources to enhance your biosafety expertise."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
 

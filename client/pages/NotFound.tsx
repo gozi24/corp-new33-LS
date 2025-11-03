@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { PageBanner } from "@/components/layout/PageBanner";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.NotFound;
 
 const NotFound = () => {
   const location = useLocation();
@@ -15,8 +18,8 @@ const NotFound = () => {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="404 — Page not found"
-        description="Sorry, we couldn't find the page you're looking for. Try returning to the homepage or using the site navigation."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "404" }]}
       />
 

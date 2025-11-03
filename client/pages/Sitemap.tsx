@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { buildCompleteSitemap, SitemapRoute } from "@/config/sitemapConfig";
 import { PageBanner } from "@/components/layout/PageBanner";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.Sitemap;
 
 interface SitemapItemProps {
   route: SitemapRoute;
@@ -91,8 +94,8 @@ export default function Sitemap() {
     return (
       <>
         <PageBanner
-          title="Sitemap"
-          description="Browse the complete structure of our website"
+          title={pageConfig.title}
+          description={pageConfig.description}
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Sitemap" }]}
         />
         <div className="bg-gradient-to-b from-slate-50 to-white min-h-screen">
@@ -117,8 +120,8 @@ export default function Sitemap() {
   return (
     <>
       <PageBanner
-        title="Sitemap"
-        description="Browse the complete structure of our website"
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Sitemap" }]}
       />
       <div className="bg-gradient-to-b from-slate-50 to-white">
