@@ -30,7 +30,7 @@ export default function Index() {
             <div>
               <div className="mb-4 md:mb-6">
                 <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
-                <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(205_100%_12%)]">
                   About {siteConfig.siteName}
                 </h2>
               </div>
@@ -90,7 +90,7 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="mb-8 md:mb-12">
             <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
-            <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(205_100%_12%)]">
               Why Choose Us
             </h2>
           </div>
@@ -118,7 +118,7 @@ export default function Index() {
             <div>
               <div className="mb-6 md:mb-8">
                 <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
-                <h3 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(205_100%_12%)]">
                   FAQs
                 </h3>
               </div>
@@ -129,7 +129,7 @@ export default function Index() {
 
             <div className="mb-6 md:mb-8">
               <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
-              <h3 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(205_100%_12%)]">
                 Contact Us
               </h3>
               <div className="mt-6">

@@ -45,7 +45,7 @@ export default function ServicesWidget() {
       <div className="container mx-auto px-4">
         <div className="mb-8 md:mb-16">
           <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
-          <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(205_100%_12%)]">
             Our Services
           </h2>
           <p className="mt-2 md:mt-4 text-sm md:text-lg text-slate-700 max-w-2xl">

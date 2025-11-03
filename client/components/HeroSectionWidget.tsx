@@ -82,7 +82,7 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
 
   return (
     <section
-      className="relative text-white overflow-hidden min-h-screen md:h-screen lg:h-screen"
+      className="pt-5 relative text-white overflow-hidden min-h-screen"
       data-header-anchor
       aria-label="Hero section"
     >
@@ -106,12 +106,15 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
           }}
         />
       </div>
-      <div className="relative container mx-auto px-4 pt-28 pb-16 md:pt-40 md:h-screen lg:pt-52 lg:pb-40 flex items-center">
-        <div className="hero-grid grid gap-6 items-center">
-          <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+      <div className="relative container mx-auto px-4 pt-28 pb-16 md:pt-39 xl:pt-48 lg:pb-40 flex items-center">
+        <div className="hero-grid grid gap-6 items-center max-w-3xl lg:max-w-4xl">
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-snug tracking-tight"
+            style={{ lineHeight: "1.15" }}
+          >
             {config.title}
           </h1>
-          <p className="mt-1 md:mt-6 text-white text-sm md:text-xl leading-relaxed max-w-2xl">
+          <p className="mt-1 md:mt-4 xl:mt-6 text-white text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl">
             {config.description}
           </p>
 
@@ -134,7 +137,7 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
             ))}
           </div>
 
-          <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 md:gap-4">
+          <div className="mt-6 md:mt-8 xl:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
             {config.cta.map((button) => (
               <Button
                 key={button.text}
