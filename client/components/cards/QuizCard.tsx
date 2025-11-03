@@ -22,7 +22,7 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
         </AspectRatio>
       </div>
       <CardHeader className="p-4 sm:p-6">
-        <h3 className="text-sm sm:text-lg font-semibold sm:font-bold leading-tight text-[hsl(var(--primary))] mb-1">
+        <h3 className="text-lg sm:text-lg font-semibold sm:font-bold leading-tight text-[hsl(var(--primary))] mb-1">
           {quiz.title}
         </h3>
         <p className="text-base sm:text-sm text-slate-600 mb-3">{quiz.subtitle}</p>
