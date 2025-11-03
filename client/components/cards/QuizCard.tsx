@@ -45,7 +45,7 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
         </div>
         <div>
           <dt className="font-medium text-slate-600 mb-1">Duration</dt>
-          <dd className="text-base sm:text-lg font-semibold sm:font-bold text-[hsl(var(--primary))]">
+          <dd className="text-lg sm:text-lg font-semibold sm:font-bold text-[hsl(var(--primary))]">
             ~{quiz.durationMinutes} min
           </dd>
         </div>
