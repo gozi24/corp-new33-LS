@@ -15,7 +15,7 @@ export default function Index() {
   return (
     <div id="top" className="text-slate-900 bg-white">
       {/* Hero Section */}
-      <HeroSectionWidget />
+      <HeroSection />
 
       {/* Knowledge Hub */}
       <section className="py-12 md:py-28 bg-slate-50">
