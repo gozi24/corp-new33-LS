@@ -6,6 +6,6 @@ export interface ArticleMeta {
   readMins: number;
   tags: string[];
   featuredImage?: {
-    url?: string;
+    url: string;
   };
 }
