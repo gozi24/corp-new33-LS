@@ -61,23 +61,11 @@ export default function ServicesWidget() {
                 <div className="absolute inset-0 bg-black/40" />
 
                 <div className="relative z-10 p-4 md:p-8 h-full flex flex-col justify-end min-h-64 md:min-h-96">
-                  <h3
-                    className={`mb-2 md:mb-3 text-base md:text-xl font-bold ${
-                      service.backgroundImage
-                        ? "text-white"
-                        : "text-[hsl(205_100%_12%)]"
-                    }`}
-                  >
+                  <h3 className="mb-2 md:mb-3 text-base md:text-xl font-bold text-white">
                     {service.title}
                   </h3>
 
-                  <p
-                    className={`text-sm md:text-base leading-relaxed ${
-                      service.backgroundImage
-                        ? "text-white/90"
-                        : "text-slate-700"
-                    }`}
-                  >
+                  <p className="text-sm md:text-base leading-relaxed text-white/90">
                     {service.description}
                   </p>
 
