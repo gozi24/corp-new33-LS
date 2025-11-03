@@ -1,11 +1,14 @@
 import { PageBanner } from "@/components/layout/PageBanner";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.Brochures;
 
 export default function Brochures() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Brochures"
-        description="Download product brochures, checklists, and quick-start guides for laboratory safety."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },

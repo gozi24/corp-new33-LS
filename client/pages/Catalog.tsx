@@ -6,6 +6,9 @@ import type { Product } from "@/entities/product";
 import { ProductCard } from "@/components/cards/ProductCard";
 import { CatalogFilterDesktop } from "@/components/features/CatalogFilterDesktop";
 import { CatalogFilterMobile } from "@/components/features/CatalogFilterMobile";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.Catalog;
 
 export default function Catalog() {
   const [query, setQuery] = useState("");
@@ -155,8 +158,8 @@ export default function Catalog() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title="Products"
-        description="Explore certified biosafety and laboratory equipment. Search and filter by categories or special tags."
+        title={pageConfig.title}
+        description={pageConfig.description}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Products" }]}
       />
 
