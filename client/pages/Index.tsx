@@ -157,11 +157,11 @@ function FeatureCard({ icon: Icon, title }: { icon: any; title: string }) {
 
 function BenefitCard({ title, descr }: { title: string; descr: string }) {
   return (
-    <div className="border-b border-slate-200 pb-8 pt-6">
-      <h3 className="text-2xl font-bold text-[hsl(var(--primary))] mb-4">
+    <div className="border-b border-slate-200 pb-4 md:pb-8 pt-3 md:pt-6">
+      <h3 className="text-base md:text-2xl font-bold text-[hsl(var(--primary))] mb-2 md:mb-4">
         {title}
       </h3>
-      <p className="text-lg leading-relaxed text-slate-700">{descr}</p>
+      <p className="text-sm md:text-lg leading-relaxed text-slate-700">{descr}</p>
     </div>
   );
 }
