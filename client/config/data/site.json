@@ -1,6 +1,7 @@
 {
   "siteName": "Esco Laboratory Safety Institute",
   "logoPath": "/logo_ebi.png",
+  "showLogoImage": true,
   "description": "Your trusted hub for laboratory safety training, regulatory guidance and practical resources. Build expertise and confidence in laboratory safety practices.",
   "nameLines": ["Esco Laboratory Safety", "Institute"],
   "contacts": {
