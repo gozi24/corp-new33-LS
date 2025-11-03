@@ -24,6 +24,9 @@ interface ArticleData {
   readMins: number;
   tags: string[];
   sections: ArticleSection[];
+  featuredImage?: {
+    url: string;
+  };
 }
 
 function Toc({ sections }: { sections: ArticleSection[] }) {
