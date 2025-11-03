@@ -36,7 +36,7 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
           </span>
         </div>
       </CardHeader>
-      <div className="px-4 sm:px-6 pb-4 sm:pb-6 grid grid-cols-2 gap-3 text-[10px] sm:text-base">
+      <div className="px-4 sm:px-6 pb-4 sm:pb-6 grid grid-cols-2 gap-3 text-[10px] sm:text-xs">
         <div>
           <dt className="font-medium text-slate-600 mb-1">Questions</dt>
           <dd className="text-base sm:text-lg font-semibold sm:font-bold text-[hsl(var(--primary))]">
