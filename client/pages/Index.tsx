@@ -127,7 +127,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="mb-8">
+            <div className="mb-8 bg-slate-50">
               <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
               <h3 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
                 Contact Us
