@@ -1,193 +1,113 @@
 [
   {
-    "slug": "biosafety-fundamentals",
-    "title": "Biosafety Fundamentals Quiz",
-    "subtitle": "Assess your understanding of biosafety levels, cabinet usage, and laboratory best practices.",
-    "category": "Biosafety",
-    "skillLevel": "Intermediate",
-    "durationMinutes": 12,
-    "questionCount": 12,
+    "slug": "lab-safety-fundamentals",
+    "title": "Test Your Knowledge on the Fundamentals of Laboratory Safety",
+    "subtitle": "Test your knowledge of essential laboratory safety principles including chemical handling, PPE, and emergency response.",
+    "category": "Laboratory Safety",
+    "skillLevel": "Beginner",
+    "durationMinutes": 10,
+    "questionCount": 8,
     "image": {
-      "url": "https://images.pexels.com/photos/6129869/pexels-photo-6129869.jpeg",
-      "alt": "Clinician organizing sterile supplies in a laboratory environment"
+      "url": "https://images.pexels.com/photos/3984356/pexels-photo-3984356.jpeg",
+      "alt": "Laboratory safety equipment and personal protective equipment"
     },
+    "description": "Test your knowledge of essential laboratory safety principles! This quiz covers fundamental concepts in chemical handling, personal protective equipment (PPE), and emergency response. See how you score and reinforce your commitment to a safe lab environment. Good luck!",
     "questions": [
       {
         "id": "q1",
-        "prompt": "This biosafety level classification is appropriate for clinical, diagnostic, teaching, and other laboratories that deal with indigenous moderate-risk agents linked with human disease, and are present in a community.",
+        "prompt": "What is the primary purpose of a fume hood?",
         "options": [
-          { "id": "A", "label": "BSL-1" },
-          { "id": "B", "label": "BSL-2" },
-          { "id": "C", "label": "BSL-3" },
-          { "id": "D", "label": "BSL-4" }
+          { "id": "A", "label": "To store chemicals safely when not in use." },
+          { "id": "B", "label": "To protect experiments from contamination." },
+          { "id": "C", "label": "To contain and exhaust hazardous chemical vapors away from the user." },
+          { "id": "D", "label": "To provide a sterile workspace for biological samples." }
         ],
-        "answerId": "B",
-        "explanation": "BSL-2 laboratories handle indigenous agents that pose moderate hazards and are commonly encountered in clinical and diagnostic settings."
+        "answerId": "C",
+        "explanation": "The primary function of a fume hood is user protection from inhalation of hazards. While it can sometimes protect samples, that is not its main purpose."
       },
       {
         "id": "q2",
-        "prompt": "This biosafety level classification applies to facilities handling indigenous or exotic agents with a potential for respiratory transmission that may be a cause for lethal infection.",
+        "prompt": "Which of the following should ALWAYS be worn in a laboratory where chemicals are used?",
         "options": [
-          { "id": "A", "label": "BSL-1" },
-          { "id": "B", "label": "BSL-2" },
-          { "id": "C", "label": "BSL-3" },
-          { "id": "D", "label": "BSL-4" }
+          { "id": "A", "label": "Sandals" },
+          { "id": "B", "label": "Safety glasses or goggles" },
+          { "id": "C", "label": "Contact lenses" },
+          { "id": "D", "label": "A single pair of nitrile gloves" }
         ],
-        "answerId": "C",
-        "explanation": "BSL-3 work focuses on agents transmissible through the respiratory route that can cause serious or lethal disease, requiring specialized containment and engineering controls."
+        "answerId": "B",
+        "explanation": "Eye protection is non-negotiable in a chemical lab. Sandals are never allowed. Contact lenses are not eye protection and can trap chemicals against the eye. Gloves are essential, but not the only PPE required."
       },
       {
         "id": "q3",
-        "prompt": "At which biosafety level should cell lines that are of human or primate origin, derived from lymphoid or tumor tissue, clinical samples, or known to contain mycoplasma be handled?",
+        "prompt": "You need to dispose of a broken glass beaker that contained a non-hazardous solution. What is the correct procedure?",
         "options": [
-          { "id": "A", "label": "BSL-1" },
-          { "id": "B", "label": "BSL-2" },
-          { "id": "C", "label": "BSL-3" },
-          { "id": "D", "label": "BSL-4" }
+          { "id": "A", "label": "Throw it directly into the regular trash bin." },
+          { "id": "B", "label": "Use a brush and dustpan to collect the pieces and dispose of them in a designated sharps container." },
+          { "id": "C", "label": "Pick up the large pieces with your hands and wipe the area with a paper towel." },
+          { "id": "D", "label": "Leave it for the cleaning staff." }
         ],
         "answerId": "B",
-        "explanation": "Human and primate-derived cell lines can harbor blood-borne pathogens or adventitious agents, so they must be handled under BSL-2 containment."
+        "explanation": "Broken glass is a physical hazard and must be treated as sharps to prevent injury to anyone handling the waste. Never use your hands."
       },
       {
         "id": "q4",
-        "prompt": "What facilities are needed in a BSL-2 laboratory?",
+        "prompt": "What does the 'NFPA 704 Diamond' on a chemical container indicate?",
         "options": [
-          {
-            "id": "A",
-            "label": "Negative pressure, double-door entry, sealed penetrations"
-          },
-          {
-            "id": "B",
-            "label": "An autoclave, an eyewash station, a biosafety cabinet for procedures creating aerosols"
-          },
-          {
-            "id": "C",
-            "label": "Positive pressure suits, a Class III BSC, and a dedicated building"
-          },
-          { "id": "D", "label": "Sinks and windows can be open" }
+          { "id": "A", "label": "The manufacturer's lot number and expiration date." },
+          { "id": "B", "label": "The chemical's molecular weight and purity." },
+          { "id": "C", "label": "The hazards of the chemical (health, flammability, instability)." },
+          { "id": "D", "label": "The appropriate storage temperature." }
         ],
-        "answerId": "B",
-        "explanation": "BSL-2 laboratories require core secondary barriers such as an autoclave, eyewash station, and certified biosafety cabinets for aerosol-generating work."
+        "answerId": "C",
+        "explanation": "The NFPA diamond is a standard labeling system for quick hazard identification. It uses colors and numbers (0-4) to indicate the severity of specific risks."
       },
       {
         "id": "q5",
-        "prompt": "The following are the laboratory facility requirements of BSL-4, except which option?",
+        "prompt": "Before using a piece of equipment like a centrifuge or autoclave, you should:",
         "options": [
-          {
-            "id": "A",
-            "label": "Class III biosafety cabinet or positive pressure suits"
-          },
-          { "id": "B", "label": "Negative pressure and dedicated exhaust air" },
-          { "id": "C", "label": "Double-door entry with airtight seals" },
-          {
-            "id": "D",
-            "label": "Open bench top and sink required in the lab room"
-          }
+          { "id": "A", "label": "Assume it's in working order and proceed." },
+          { "id": "B", "label": "Ask a colleague if they've used it recently." },
+          { "id": "C", "label": "Read the SOP (Standard Operating Procedure) and perform a visual inspection." },
+          { "id": "D", "label": "Only check it if it looks old." }
         ],
-        "answerId": "D",
-        "explanation": "BSL-4 facilities are fully sealed and do not permit open bench work; sinks are specialized and not open to the room."
+        "answerId": "C",
+        "explanation": "Never assume equipment is safe. Always be trained on and review the SOP before use. A visual check for damage is a simple but critical step."
       },
       {
         "id": "q6",
-        "prompt": "Where should materials be placed inside a biosafety cabinet to maintain proper laminar airflow?",
+        "prompt": "What is the first thing you should do if a hazardous chemical splashes into your eye?",
         "options": [
-          {
-            "id": "A",
-            "label": "Crowded together in the center for efficiency"
-          },
-          {
-            "id": "B",
-            "label": "At least 2-3 inches from the grill on the front and back"
-          },
-          { "id": "C", "label": "Directly over the front grill" },
-          { "id": "D", "label": "On the very edge of the work surface" }
+          { "id": "A", "label": "Go to the nearest hospital emergency room." },
+          { "id": "B", "label": "Call your supervisor." },
+          { "id": "C", "label": "Immediately use the emergency eyewash station for at least 15 minutes." },
+          { "id": "D", "label": "Try to neutralize the chemical with another solution." }
         ],
-        "answerId": "B",
-        "explanation": "Keeping materials a few inches from the intake and exhaust grills preserves the laminar airflow pattern that provides protection."
+        "answerId": "C",
+        "explanation": "Speed is critical in an eye emergency. Flushing with water for a prolonged period (15 minutes is standard) is the first aid response before seeking medical attention."
       },
       {
         "id": "q7",
-        "prompt": "Where should the autoclavable biohazard collection bag and pipette collection tray be placed?",
+        "prompt": "'PPE' in a laboratory context stands for:",
         "options": [
-          {
-            "id": "A",
-            "label": "Inside the biosafety cabinet for easy access"
-          },
-          {
-            "id": "B",
-            "label": "On a separate cart or bench outside the cabinet"
-          },
-          { "id": "C", "label": "On the floor next to the user" },
-          { "id": "D", "label": "Placement does not matter" }
+          { "id": "A", "label": "Personal Project Equipment" },
+          { "id": "B", "label": "Primary Protection Ensemble" },
+          { "id": "C", "label": "Personal Protective Equipment" },
+          { "id": "D", "label": "Professional Practice Evaluation" }
         ],
-        "answerId": "B",
-        "explanation": "Waste containers inside the cabinet disrupt airflow and increase contamination risk, so they must be placed just outside the BSC."
+        "answerId": "C",
+        "explanation": "PPE is the last line of defense and includes lab coats, gloves, goggles, and other protective gear."
       },
       {
         "id": "q8",
-        "prompt": "Which component of a biosafety cabinet is essential for providing clean air?",
+        "prompt": "When transporting chemicals outside of the lab (e.g., to another room), you should:",
         "options": [
-          { "id": "A", "label": "UV lamp" },
-          { "id": "B", "label": "Fluorescent light" },
-          { "id": "C", "label": "HEPA filter" },
-          { "id": "D", "label": "Blower motor" }
+          { "id": "A", "label": "Carry the bottle by its neck for secure grip." },
+          { "id": "B", "label": "Place them in a secondary container (like a bucket or acid carry bucket) to contain spills." },
+          { "id": "C", "label": "Quickly walk them to the destination to minimize exposure." },
+          { "id": "D", "label": "Only move them during quiet hours." }
         ],
-        "answerId": "C",
-        "explanation": "The HEPA filter removes 99.97% of particulates and microorganisms, ensuring sterile airflow within the cabinet."
-      },
-      {
-        "id": "q9",
-        "prompt": "How often should the UV lamp in a biosafety cabinet be cleaned to maintain germicidal effectiveness?",
-        "options": [
-          { "id": "A", "label": "Never, it is sealed" },
-          { "id": "B", "label": "Once a year" },
-          { "id": "C", "label": "Every month" },
-          { "id": "D", "label": "Weekly" }
-        ],
-        "answerId": "D",
-        "explanation": "Dust accumulation degrades UV performance, so a weekly cleaning with 70% ethanol is standard practice."
-      },
-      {
-        "id": "q10",
-        "prompt": "What is the ideal location for a biosafety cabinet within a laboratory?",
-        "options": [
-          { "id": "A", "label": "In a high-traffic area near a doorway" },
-          { "id": "B", "label": "Under an HVAC supply vent" },
-          {
-            "id": "C",
-            "label": "In a low-traffic area away from air currents and doors"
-          },
-          { "id": "D", "label": "Next to an open window for ventilation" }
-        ],
-        "answerId": "C",
-        "explanation": "Air currents from doors, windows, or HVAC vents can disrupt the protective air curtain, so BSCs belong in calm, low-traffic areas."
-      },
-      {
-        "id": "q11",
-        "prompt": "Which type of biosafety cabinet has the most basic and now largely obsolete design, providing only personnel and environmental protection?",
-        "options": [
-          { "id": "A", "label": "Class II, Type A2" },
-          { "id": "B", "label": "Class II, Type B2" },
-          { "id": "C", "label": "Class I" },
-          { "id": "D", "label": "Class III" }
-        ],
-        "answerId": "C",
-        "explanation": "Class I cabinets protect personnel and the environment but not the product, making them unsuitable for many modern applications."
-      },
-      {
-        "id": "q12",
-        "prompt": "Why is the overhead clearance of a biosafety cabinet important?",
-        "options": [
-          { "id": "A", "label": "To make the cabinet look balanced" },
-          { "id": "B", "label": "To allow users to see inside easily" },
-          {
-            "id": "C",
-            "label": "To ensure proper airflow into the exhaust HEPA filter"
-          },
-          { "id": "D", "label": "To store supplies on top of the cabinet" }
-        ],
-        "answerId": "C",
-        "explanation": "Adequate clearance prevents back pressure and allows the exhaust HEPA filter to function properly, maintaining containment."
+        "answerId": "B",
+        "explanation": "Secondary containment is a fundamental practice to prevent spills and exposure during transport. This is a key principle of chemical hygiene."
       }
     ]
   }
