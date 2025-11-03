@@ -1,43 +1,29 @@
 import { GraduationCap, CheckCircle, Wrench, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import servicesData from "@/config/data/servicesWidget.json";
 
-interface Service {
+interface ServiceData {
   title: string;
   description: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: string;
   href: string;
   backgroundImage?: string;
 }
 
-const SERVICES: Service[] = [
-  {
-    title: "Trainings and Seminars",
-    description:
-      "Securing adherence to quality system standards by comprehensive auditing and compliance to regulations by training & education.",
-    icon: GraduationCap,
-    href: "/services/trainings-and-seminars",
-    backgroundImage:
-      "https://pharmavalidationtraininginstitute.com/images/section/Audit-and-Training-Service.jpg",
-  },
-  {
-    title: "Validation Service",
-    description:
-      "Ensuring integrity and performance of systems, facilities & equipment through validation.",
-    icon: CheckCircle,
-    href: "/services/validation-service",
-    backgroundImage:
-      "https://pharmavalidationtraininginstitute.com/images/section/Validation-Service.jpg",
-  },
-  {
-    title: "Commissioning and Qualification",
-    description:
-      "Providing quality installation of equipment and construction of facility from start to finish.",
-    icon: Wrench,
-    href: "/services/commissioning-and-qualification",
-    backgroundImage:
-      "https://pharmavalidationtraininginstitute.com/images/section/Commissioning-and-Qualification.jpg",
-  },
-];
+interface Service extends ServiceData {
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+  GraduationCap,
+  CheckCircle,
+  Wrench,
+};
+
+const SERVICES: Service[] = servicesData.services.map((service: ServiceData) => ({
+  ...service,
+  icon: ICON_MAP[service.icon] || GraduationCap,
+}));
 
 export default function ServicesWidget() {
   return (
