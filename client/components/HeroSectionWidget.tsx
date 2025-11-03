@@ -107,7 +107,7 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
           }}
         />
       </div>
-      <div className="relative container mx-auto px-4 pt-20 pb-16 md:pt-40 md:h-screen lg:pt-52 lg:pb-40 flex items-center">
+      <div className="relative container mx-auto px-4 pt-24 pb-16 md:pt-40 md:h-screen lg:pt-52 lg:pb-40 flex items-center">
         <div className="hero-grid grid gap-6 items-center">
           <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
             {config.title}
