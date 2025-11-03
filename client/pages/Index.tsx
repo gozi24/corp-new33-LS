@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import FAQWidget from "@/components/widgets/FAQWidget";
 import { Button } from "@/components/Button";
-import HeroSectionWidget from "@/components/HeroSectionWidget";
+import HeroSection from "@/components/sections/HeroSection";
 import ServicesWidget from "@/components/widgets/ServicesWidget";
 import KnowledgeHubWidget from "@/components/widgets/KnowledgeHubWidget";
 import EmailSubscriptionWidget from "@/components/widgets/EmailSubscriptionWidget";
