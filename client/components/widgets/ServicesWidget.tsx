@@ -20,10 +20,12 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Wrench,
 };
 
-const SERVICES: Service[] = servicesData.services.map((service: ServiceData) => ({
-  ...service,
-  icon: ICON_MAP[service.icon] || GraduationCap,
-}));
+const SERVICES: Service[] = servicesData.services.map(
+  (service: ServiceData) => ({
+    ...service,
+    icon: ICON_MAP[service.icon] || GraduationCap,
+  }),
+);
 
 export default function ServicesWidget() {
   return (

@@ -40,11 +40,15 @@ export default function CommissioningAndQualification() {
 
               <div>
                 <div className="bg-slate-50 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold mb-4">Services Offered</h3>
+                  <h3 className="text-lg font-semibold mb-4">
+                    Services Offered
+                  </h3>
                   <div className="space-y-3">
                     {commissioningData.services.map((s) => (
                       <div key={s} className="flex items-start gap-3">
-                        <span className="text-[hsl(var(--primary))] mt-1">•</span>
+                        <span className="text-[hsl(var(--primary))] mt-1">
+                          •
+                        </span>
                         <span className="text-slate-700">{s}</span>
                       </div>
                     ))}

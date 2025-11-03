@@ -52,7 +52,9 @@ export default function ValidationService() {
         <div className="container mx-auto px-4 pt-6">
           <div className="text-center">
             <Button asChild size="md">
-              <Link to={validationData.cta.href}>{validationData.cta.text}</Link>
+              <Link to={validationData.cta.href}>
+                {validationData.cta.text}
+              </Link>
             </Button>
           </div>
         </div>
