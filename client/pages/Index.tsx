@@ -112,13 +112,13 @@ export default function Index() {
       </section>
 
       {/* Contact teaser */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="py-12 md:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-12">
             <div>
-              <div className="mb-8">
-                <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
-                <h3 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+              <div className="mb-6 md:mb-8">
+                <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
+                <h3 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
                   FAQs
                 </h3>
               </div>
@@ -127,9 +127,9 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="mb-8">
-              <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
-              <h3 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+            <div className="mb-6 md:mb-8">
+              <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
+              <h3 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
                 Contact Us
               </h3>
               <div className="mt-6">
