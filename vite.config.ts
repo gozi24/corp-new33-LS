@@ -48,7 +48,7 @@ function configInjectionPlugin(): Plugin {
         __dirname,
         "./client/config/data/site.json",
       );
-      let siteName = "Esco Cell Culture Institute";
+      let siteName = "Laboratory Safety Institute";
       try {
         const siteJson = JSON.parse(fs.readFileSync(siteJsonPath, "utf-8"));
         if (siteJson && siteJson.siteName) siteName = siteJson.siteName;
