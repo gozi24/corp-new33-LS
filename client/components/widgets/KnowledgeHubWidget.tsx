@@ -542,7 +542,7 @@ export default function KnowledgeHubWidget({
             <div className="mb-0">
               <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
               <div className="flex items-center">
-                <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(205_100%_12%)]">
                   Knowledge Hub
                 </h2>
                 <Link
