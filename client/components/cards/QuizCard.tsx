@@ -16,12 +16,12 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
         />
       </AspectRatio>
       <div className="mb-2">
-        <h3 className="text-lg font-bold leading-tight text-[hsl(var(--primary))] mb-1">
+        <h3 className="text-sm sm:text-lg font-semibold sm:font-bold leading-tight text-[hsl(var(--primary))] mb-1">
           {quiz.title}
         </h3>
-        <p className="text-sm text-slate-600">{quiz.subtitle}</p>
+        <p className="text-xs sm:text-sm text-slate-600">{quiz.subtitle}</p>
       </div>
-      <div className="mb-3 flex flex-wrap items-center gap-2 text-xs font-semibold text-[hsl(var(--primary))] uppercase tracking-wide">
+      <div className="mb-3 flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-medium sm:font-semibold text-[hsl(var(--primary))] uppercase tracking-wide">
         <span className="bg-[hsl(var(--primary))]/5 px-2 py-1">
           {quiz.category}
         </span>
@@ -30,16 +30,16 @@ export function QuizCard({ quiz }: { quiz: QuizMeta }) {
           {quiz.skillLevel}
         </span>
       </div>
-      <div className="mb-3 grid grid-cols-2 gap-3 text-xs">
+      <div className="mb-3 grid grid-cols-2 gap-3 text-[10px] sm:text-xs">
         <div>
           <dt className="font-medium text-slate-600 mb-1">Questions</dt>
-          <dd className="text-lg font-bold text-[hsl(var(--primary))]">
+          <dd className="text-base sm:text-lg font-semibold sm:font-bold text-[hsl(var(--primary))]">
             {quiz.questionCount}
           </dd>
         </div>
         <div>
           <dt className="font-medium text-slate-600 mb-1">Duration</dt>
-          <dd className="text-lg font-bold text-[hsl(var(--primary))]">
+          <dd className="text-base sm:text-lg font-semibold sm:font-bold text-[hsl(var(--primary))]">
             ~{quiz.durationMinutes} min
           </dd>
         </div>
