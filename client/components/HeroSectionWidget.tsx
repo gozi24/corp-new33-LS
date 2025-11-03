@@ -116,7 +116,7 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
             {config.description}
           </p>
 
-          <div className="mt-1 grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 max-w-2xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 max-w-2xl">
             {config.features.map(({ label, icon: Icon, bg }) => (
               <div
                 key={label}
