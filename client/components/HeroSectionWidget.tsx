@@ -112,7 +112,7 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
           <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
             {config.title}
           </h1>
-          <p className="mt-4 md:mt-6 text-white text-sm md:text-xl leading-relaxed max-w-2xl">
+          <p className="mt-2 md:mt-6 text-white text-sm md:text-xl leading-relaxed max-w-2xl">
             {config.description}
           </p>
 
