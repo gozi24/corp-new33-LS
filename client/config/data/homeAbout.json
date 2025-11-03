@@ -1,12 +1,12 @@
 {
   "paragraphs": [
-    "Esco Cell Culture Institute advances cell culture education and standards through practical training and industry collaboration.",
-    "We provide hands-on workshops, best-practice resources, and certification programs to improve laboratory quality and research outcomes."
+    "We believe that every scientific breakthrough begins with a safe environment. Our mission is to partner with the global research community―from academic labs to industrial R&D centers― to create a world where safety is integral to discovery.",
+    "We provide the essential guidelines, training programs, and support systems that empower scientists and technicians to focus on what they do best: exploring the unknown. Together, we are building a culture of vigilance and care, ensuring that the pursuit of knowledge protects both its seekers and the world they seek to improve."
   ],
   "missions": [
     {
       "title": "Hands-on Education",
-      "descr": "Deliver practical workshops and certified training focused on aseptic technique and contamination control."
+      "descr": "Deliver practical workshops and certified training focused on safety protocols and hazard control."
     },
     {
       "title": "Accessible Resources",
@@ -14,7 +14,7 @@
     },
     {
       "title": "Community Support",
-      "descr": "Promote collaboration across labs, institutions and industry to raise standards in cell culture practice."
+      "descr": "Promote collaboration across labs, institutions and industry to raise standards in laboratory safety practice."
     }
   ]
 }

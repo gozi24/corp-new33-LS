@@ -1,22 +1,22 @@
 {
-  "bannerDescription": "Discover Esco Cell Culture Institute and our mission to advance cell culture education and standards.",
+  "bannerDescription": "Learn about Esco Laboratory Safety Institute and our mission to drive systemic safety improvement worldwide.",
   "paragraphs": [
-    "Esco is a global life sciences company that started in 1978 as a cleanroom technology specialist. It has since progressed into a key player that leverages its Singapore headquarters as a strategic hub to connect Eastern and Western markets. The company is a market leader in biological safety cabinets and maintains a significant worldwide presence.",
-    "A key initiative in fulfilling its vision was the creation of the Esco Cell Culture Institute. The Institute was created to push forward Esco's core mission of building a global life sciences ecosystem. Beyond manufacturing, it serves as a foundational pillar for cell culture education and standards."
+    "The Esco Laboratory Safety Institute is an initiative born from Esco, a leading manufacturer of precision laboratory safety equipment. For decades, our work has provided essential protection―from fume hoods and biosafety cabinets to advanced facility-wide solutions― and has given us a unique vantage point on the challenges facing modern laboratories.",
+    "We founded the Institute to move beyond our role as an equipment provider and become a driving force for systemic safety improvement worldwide. The Institute leverages this deep industry position to serve the entire life sciences industry. It was established to advance our core vision of building a more resilient and proactive safety ecosystem. By functioning as an independent center for excellence, the Institute aims to:"
   ],
   "missions": [
     {
-      "title": "Cultivate a Global Culture of Cell Culture Excellence",
-      "descr": "Educate and certify professionals worldwide, ensuring the highest standards of aseptic technique, quality, and regulatory compliance in cell culture laboratories."
+      "title": "Establish the Highest Standards of Practice",
+      "descr": "To develop and promote rigorous safety protocols and certifications that become the global benchmark for laboratory operations."
     },
     {
-      "title": "Bridge the Knowledge Gap",
-      "descr": "Serve as a central hub for cell culture best practices, protocol development, and practical skills, leveraging 40+ years of industry experience."
+      "title": "Bridge Theory with Real-World Application",
+      "descr": "To provide a vital nexus where academic safety principles meet practical, hands-on training with the latest technologies and containment strategies."
     },
     {
-      "title": "Empower the Scientific Community",
-      "descr": "Advance research and patient outcomes by improving cell culture technique, contamination control, and responsible handling of biological materials."
+      "title": "Empower a New Generation of Safety Leaders",
+      "descr": "To equip safety professionals and researchers with advanced skills and knowledge needed to navigate emerging risks and complex regulatory landscapes, fostering environments where discovery can thrive without compromise."
     }
   ],
-  "journeyLastLabel": "Esco Cell Culture Institute"
+  "journeyLastLabel": "Esco Laboratory Safety Institute"
 }

@@ -17,41 +17,41 @@ export default function Index() {
       <HeroSectionWidget />
 
       {/* Knowledge Hub */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="py-12 md:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
           <KnowledgeHubWidget />
         </div>
       </section>
 
       {/* About & Mission Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-12 md:py-28 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
             <div>
-              <div className="mb-6">
-                <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
-                <h2 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+              <div className="mb-4 md:mb-6">
+                <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
+                <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
                   About {siteConfig.siteName}
                 </h2>
               </div>
               {homeAboutData.paragraphs.slice(0, 2).map((p, i) => (
                 <p
                   key={i}
-                  className="text-lg text-slate-700 mb-4 leading-relaxed"
+                  className="text-sm md:text-lg text-slate-700 mb-3 md:mb-4 leading-relaxed"
                 >
                   {p}
                 </p>
               ))}
               <Button
                 asChild
-                size="lg"
-                className="shadow-lg hover:shadow-xl bg-[hsl(var(--primary))] hover:bg-[hsl(205_100%_20%)]"
+                size="md"
+                className="shadow-lg hover:shadow-xl bg-[hsl(var(--primary))] hover:bg-[hsl(205_100%_20%)] md:size-lg"
               >
                 <Link to="/about">Learn more</Link>
               </Button>
             </div>
-            <div className="relative flex items-center justify-center">
-              <div className="w-full h-56 sm:h-72 md:h-80 bg-slate-100 border border-slate-200 rounded-lg overflow-hidden flex items-center justify-center">
+            <div className="relative flex items-center justify-center hidden md:flex">
+              <div className="w-full h-64 md:h-80 bg-slate-100 border border-slate-200 rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/placeholder.svg"
                   alt="About photo"
@@ -86,15 +86,15 @@ export default function Index() {
       <ServicesWidget />
 
       {/* Benefits - Color Block Section */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-28">
         <div className="container mx-auto px-4">
-          <div className="mb-12">
-            <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+          <div className="mb-8 md:mb-12">
+            <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
+            <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
               Why Choose Us
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
             <BenefitCard
               title="Industry Expertise"
               descr="10+ years supplying public and private healthcare institutions with trusted biosafety solutions"
@@ -112,13 +112,13 @@ export default function Index() {
       </section>
 
       {/* Contact teaser */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-12 md:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-12">
             <div>
-              <div className="mb-8">
-                <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
-                <h3 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+              <div className="mb-6 md:mb-8">
+                <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
+                <h3 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
                   FAQs
                 </h3>
               </div>
@@ -127,9 +127,9 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="mb-8">
-              <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
-              <h3 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+            <div className="mb-6 md:mb-8">
+              <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
+              <h3 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
                 Contact Us
               </h3>
               <div className="mt-6">
@@ -157,11 +157,13 @@ function FeatureCard({ icon: Icon, title }: { icon: any; title: string }) {
 
 function BenefitCard({ title, descr }: { title: string; descr: string }) {
   return (
-    <div className="border-b border-slate-200 pb-8 pt-6">
-      <h3 className="text-2xl font-bold text-[hsl(var(--primary))] mb-4">
+    <div className="border-b border-slate-200 pb-4 md:pb-8 pt-3 md:pt-6">
+      <h3 className="text-base md:text-2xl font-bold text-[hsl(var(--primary))] mb-2 md:mb-4">
         {title}
       </h3>
-      <p className="text-lg leading-relaxed text-slate-700">{descr}</p>
+      <p className="text-sm md:text-lg leading-relaxed text-slate-700">
+        {descr}
+      </p>
     </div>
   );
 }

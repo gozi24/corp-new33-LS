@@ -32,9 +32,8 @@ interface HeroSectionWidgetProps {
 
 const defaultConfig: Required<HeroSectionWidgetProps> = {
   title: `Welcome to ${siteConfig.siteName}!`,
-  description: `Biosafety in any laboratory is crucial. The ${siteConfig.siteName} was established to be your partner in achieving it. Our institute provides:`,
-  backgroundImage:
-    "/ebi_hero.jpg",
+  description: `Safety in any laboratory is fundamental. The ${siteConfig.siteName} was established to be your partner in achieving it. We provide:`,
+  backgroundImage: "/ebi_hero.jpg",
   backgroundImageAlt:
     "Bright and sterile laboratory featuring high-tech research equipment and medical professionals at work",
   backgroundGradFrom: "#020113",
@@ -107,40 +106,40 @@ export default function HeroSectionWidget(props: HeroSectionWidgetProps = {}) {
           }}
         />
       </div>
-      <div className="relative container mx-auto px-4 pt-32 pb-24 md:pt-40 md:h-screen lg:pt-52 lg:pb-40 flex items-center">
+      <div className="relative container mx-auto px-4 pt-28 pb-16 md:pt-40 md:h-screen lg:pt-52 lg:pb-40 flex items-center">
         <div className="hero-grid grid gap-6 items-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+          <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
             {config.title}
           </h1>
-          <p className="mt-6 text-white text-lg md:text-xl leading-relaxed max-w-2xl">
+          <p className="mt-1 md:mt-6 text-white text-sm md:text-xl leading-relaxed max-w-2xl">
             {config.description}
           </p>
 
-          <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 max-w-2xl">
             {config.features.map(({ label, icon: Icon, bg }) => (
               <div
                 key={label}
                 className={cn(
-                  "flex items-center gap-4 text-white rounded-lg px-4 py-4 backdrop-blur-sm bg-white/10 border border-white/20",
+                  "flex items-center gap-2 md:gap-4 text-white rounded-lg px-3 py-3 md:px-4 md:py-4 backdrop-blur-sm bg-white/10 border border-white/20",
                   bg,
                 )}
               >
-                <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
-                  <Icon className="h-6 w-6" />
+                <div className="flex-shrink-0 inline-flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-lg bg-white/20">
+                  <Icon className="h-5 w-5 md:h-6 md:w-6" />
                 </div>
-                <span className="font-semibold text-base leading-tight">
+                <span className="font-semibold text-sm md:text-base leading-tight">
                   {label}
                 </span>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 md:gap-4">
             {config.cta.map((button) => (
               <Button
                 key={button.text}
                 asChild
-                size="lg"
+                size="md"
                 variant={button.variant}
                 className={
                   button.variant === "primary"

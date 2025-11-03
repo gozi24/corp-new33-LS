@@ -41,20 +41,20 @@ const SERVICES: Service[] = [
 
 export default function ServicesWidget() {
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section className="py-12 md:py-28 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4">
-        <div className="mb-16">
-          <div className="w-16 h-1 bg-[hsl(var(--primary))] mb-4"></div>
-          <h2 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+        <div className="mb-8 md:mb-16">
+          <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
+          <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
             Our Services
           </h2>
-          <p className="mt-4 text-lg text-slate-700 max-w-2xl">
-            Comprehensive solutions for biosafety compliance and quality
+          <p className="mt-2 md:mt-4 text-sm md:text-lg text-slate-700 max-w-2xl">
+            Comprehensive solutions for laboratory safety compliance and quality
             assurance
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-4 md:gap-8 md:grid-cols-3">
           {SERVICES.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -78,9 +78,9 @@ export default function ServicesWidget() {
                   <div className="absolute inset-0 bg-black/40" />
                 )}
 
-                <div className="relative z-10 p-8 h-full flex flex-col justify-end min-h-96">
+                <div className="relative z-10 p-4 md:p-8 h-full flex flex-col justify-end min-h-64 md:min-h-96">
                   <h3
-                    className={`mb-3 text-xl font-bold ${
+                    className={`mb-2 md:mb-3 text-base md:text-xl font-bold ${
                       service.backgroundImage
                         ? "text-white"
                         : "text-[hsl(205_100%_12%)]"
@@ -90,7 +90,7 @@ export default function ServicesWidget() {
                   </h3>
 
                   <p
-                    className={`text-base leading-relaxed ${
+                    className={`text-sm md:text-base leading-relaxed ${
                       service.backgroundImage
                         ? "text-white/90"
                         : "text-slate-700"
@@ -99,8 +99,8 @@ export default function ServicesWidget() {
                     {service.description}
                   </p>
 
-                  <div className="absolute top-6 right-6 text-white">
-                    <ArrowRight className="h-6 w-6 transition-transform duration-300 group-hover:-rotate-45" />
+                  <div className="absolute top-4 md:top-6 right-4 md:right-6 text-white">
+                    <ArrowRight className="h-5 w-5 md:h-6 md:w-6 transition-transform duration-300 group-hover:-rotate-45" />
                   </div>
                 </div>
 

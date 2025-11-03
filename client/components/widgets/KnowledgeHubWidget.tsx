@@ -537,12 +537,12 @@ export default function KnowledgeHubWidget({
         onValueChange={(v) => setTab(v as any)}
         className="w-full"
       >
-        <div className="flex items-end justify-between gap-4 mb-8">
-          <div className="flex flex-col items-start gap-6">
+        <div className="flex items-end justify-between gap-4 mb-6 md:mb-8">
+          <div className="flex flex-col items-start gap-4 md:gap-6">
             <div className="mb-0">
-              <div className="w-16 h-1 bg-brand-secondary mb-4"></div>
+              <div className="w-12 md:w-16 h-1 bg-brand-secondary mb-2 md:mb-4"></div>
               <div className="flex items-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
+                <h2 className="text-2xl md:text-5xl font-bold text-[hsl(205_100%_12%)]">
                   Knowledge Hub
                 </h2>
                 <Link
@@ -554,28 +554,28 @@ export default function KnowledgeHubWidget({
               </div>
             </div>
 
-            <TabsList className="bg-transparent h-auto inline-flex items-start gap-4 lg:gap-6 rounded-none">
+            <TabsList className="bg-transparent h-auto inline-flex items-start gap-4 md:gap-6 lg:gap-6 rounded-none">
               <TabsTrigger
                 value="articles"
-                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-lg md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
+                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-sm md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
               >
                 Articles
               </TabsTrigger>
               <TabsTrigger
                 value="quizzes"
-                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-lg md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
+                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-sm md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
               >
                 Quizzes
               </TabsTrigger>
               <TabsTrigger
                 value="videos"
-                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-lg md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
+                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-sm md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
               >
                 Videos
               </TabsTrigger>
               <TabsTrigger
                 value="podcasts"
-                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-lg md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
+                className="bg-transparent data-[state=active]:bg-transparent rounded-none px-0 pb-1 text-sm md:text-xl font-medium tracking-tight text-[hsl(var(--brand-end))] hover:text-[hsl(var(--brand-end))]/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--brand-end))]/30 data-[state=active]:border-b-2 data-[state=active]:border-[hsl(var(--brand-end))] data-[state=active]:pb-1"
               >
                 Podcasts
               </TabsTrigger>
@@ -697,7 +697,7 @@ export default function KnowledgeHubWidget({
                   <div
                     key={a.slug}
                     className="
-                    w-[250px]     // мобилки
+                    w-[250px]     // моби��ки
                     sm:w-[300px]  // планшеты
                     md:w-[360px]  // десктоп
                     flex-shrink-0
