@@ -9,12 +9,16 @@ import {
   Clock,
   LifeBuoy,
   Check,
+  GraduationCap,
+  CheckCircle,
+  Users,
+  Trophy,
+  Building2,
+  CheckCircle2,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/Button";
 import servicesData from "@/config/data/services.json";
-import TrainingsSection from "@/components/services/TrainingsSection";
-import CommissioningSection from "@/components/services/CommissioningSection";
-import ValidationSection from "@/components/services/ValidationSection";
 
 const ICONS: Record<string, any> = {
   Headset,
@@ -24,6 +28,11 @@ const ICONS: Record<string, any> = {
   Award,
   Truck,
   Clock,
+  GraduationCap,
+  CheckCircle,
+  Users,
+  Trophy,
+  Building2,
 };
 
 export default function Services() {
@@ -109,15 +118,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* Trainings Section (embedded) */}
-      <TrainingsSection />
-
-      {/* Commissioning Section (embedded) */}
-      <CommissioningSection />
-
-      {/* Validation Section (embedded) */}
-      <ValidationSection />
     </div>
   );
 }

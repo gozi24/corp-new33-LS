@@ -1,43 +1,31 @@
 import { GraduationCap, CheckCircle, Wrench, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import servicesData from "@/config/data/servicesWidget.json";
 
-interface Service {
+interface ServiceData {
   title: string;
   description: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: string;
   href: string;
   backgroundImage?: string;
 }
 
-const SERVICES: Service[] = [
-  {
-    title: "Trainings and Seminars",
-    description:
-      "Securing adherence to quality system standards by comprehensive auditing and compliance to regulations by training & education.",
-    icon: GraduationCap,
-    href: "/services/trainings-and-seminars",
-    backgroundImage:
-      "https://pharmavalidationtraininginstitute.com/images/section/Audit-and-Training-Service.jpg",
-  },
-  {
-    title: "Validation Service",
-    description:
-      "Ensuring integrity and performance of systems, facilities & equipment through validation.",
-    icon: CheckCircle,
-    href: "/services/validation-service",
-    backgroundImage:
-      "https://pharmavalidationtraininginstitute.com/images/section/Validation-Service.jpg",
-  },
-  {
-    title: "Commissioning and Qualification",
-    description:
-      "Providing quality installation of equipment and construction of facility from start to finish.",
-    icon: Wrench,
-    href: "/services/commissioning-and-qualification",
-    backgroundImage:
-      "https://pharmavalidationtraininginstitute.com/images/section/Commissioning-and-Qualification.jpg",
-  },
-];
+interface Service extends ServiceData {
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+  GraduationCap,
+  CheckCircle,
+  Wrench,
+};
+
+const SERVICES: Service[] = servicesData.services.map(
+  (service: ServiceData) => ({
+    ...service,
+    icon: ICON_MAP[service.icon] || GraduationCap,
+  }),
+);
 
 export default function ServicesWidget() {
   return (
@@ -66,36 +54,20 @@ export default function ServicesWidget() {
                 <div
                   className="absolute inset-0 transition-transform duration-300 group-hover:scale-105"
                   style={{
-                    backgroundImage: service.backgroundImage
-                      ? `url(${service.backgroundImage})`
-                      : undefined,
+                    backgroundImage: `url(${service.backgroundImage || "/placeholder.svg"})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--primary))]/5 to-[hsl(var(--primary))]/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                {service.backgroundImage && (
-                  <div className="absolute inset-0 bg-black/40" />
-                )}
+                <div className="absolute inset-0 bg-black/40" />
 
                 <div className="relative z-10 p-4 md:p-8 h-full flex flex-col justify-end min-h-64 md:min-h-96">
-                  <h3
-                    className={`mb-2 md:mb-3 text-base md:text-xl font-bold ${
-                      service.backgroundImage
-                        ? "text-white"
-                        : "text-[hsl(205_100%_12%)]"
-                    }`}
-                  >
+                  <h3 className="mb-2 md:mb-3 text-base md:text-xl font-bold text-white">
                     {service.title}
                   </h3>
 
-                  <p
-                    className={`text-sm md:text-base leading-relaxed ${
-                      service.backgroundImage
-                        ? "text-white/90"
-                        : "text-slate-700"
-                    }`}
-                  >
+                  <p className="text-sm md:text-base leading-relaxed text-white/90">
                     {service.description}
                   </p>
 
