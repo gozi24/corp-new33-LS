@@ -19,6 +19,9 @@ import {
 import { Link } from "react-router-dom";
 import { Button } from "@/components/Button";
 import servicesData from "@/config/data/services.json";
+import pageBannersConfig from "@/config/data/pageBanners.json";
+
+const pageConfig = (pageBannersConfig as any).pages.Services;
 
 const ICONS: Record<string, any> = {
   Headset,
@@ -39,8 +42,8 @@ export default function Services() {
   return (
     <div className="bg-white text-slate-900">
       <PageBanner
-        title={servicesData.title}
-        description={servicesData.description}
+        title={pageConfig.titleSource ? servicesData.title : pageConfig.title}
+        description={pageConfig.descriptionSource ? servicesData.description : pageConfig.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },
