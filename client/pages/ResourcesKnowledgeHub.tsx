@@ -43,6 +43,7 @@ export default function KnowledgeHub() {
           date: d.date,
           readMins: d.readMins,
           tags: d.tags,
+          featuredImage: d.featuredImage,
           image: d.image,
         }));
         // Deduplicate articles by slug to avoid rendering warnings about duplicate React keys
