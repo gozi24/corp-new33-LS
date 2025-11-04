@@ -22,7 +22,10 @@ const footerNavigation: NavigationLink[] = [
 const footerServices: NavigationLink[] = [
   { label: "Trainings and Seminars", href: "/services/trainings-and-seminars" },
   { label: "Validation Service", href: "/services/validation-service" },
-  { label: "Commissioning and Qualification", href: "/services/commissioning-and-qualification" },
+  {
+    label: "Commissioning and Qualification",
+    href: "/services/commissioning-and-qualification",
+  },
 ];
 
 export default function Footer() {
