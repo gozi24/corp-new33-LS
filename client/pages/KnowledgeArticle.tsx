@@ -141,21 +141,6 @@ export default function KnowledgeArticle() {
           className="mb-6"
         />
 
-        {featuredImage && (
-          <div className="mb-8 overflow-hidden rounded-lg">
-            <img
-              src={featuredImage.url}
-              alt={featuredImage?.alt || title}
-              className="h-auto w-full object-cover"
-            />
-            {featuredImage?.caption && (
-              <p className="mt-2 text-sm text-slate-600 italic">
-                {featuredImage.caption}
-              </p>
-            )}
-          </div>
-        )}
-
         {/* Mobile TOC */}
         <div className="mb-8 lg:hidden">
           <Toc sections={sections} />
@@ -163,6 +148,22 @@ export default function KnowledgeArticle() {
         </div>
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
+
+          {featuredImage && (
+            <div className="mb-8 overflow-hidden rounded-lg">
+              <img
+                src={featuredImage.url}
+                alt={featuredImage?.alt || title}
+                className="h-auto w-full object-cover"
+              />
+              {featuredImage?.caption && (
+                <p className="mt-2 text-sm text-slate-600 italic">
+                  {featuredImage.caption}
+                </p>
+              )}
+            </div>
+          )}
+          
           <div className="lg:col-span-8">
             {sections.map((s) => (
               <section key={s.id} id={s.id} className="scroll-mt-24">
