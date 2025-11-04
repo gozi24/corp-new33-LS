@@ -147,8 +147,6 @@ export default function KnowledgeArticle() {
           <Separator className="my-6" />
         </div>
 
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
-
           {featuredImage && (
             <div className="mb-8 overflow-hidden rounded-lg">
               <img
@@ -163,7 +161,8 @@ export default function KnowledgeArticle() {
               )}
             </div>
           )}
-          
+
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">          
           <div className="lg:col-span-8">
             {sections.map((s) => (
               <section key={s.id} id={s.id} className="scroll-mt-24">
