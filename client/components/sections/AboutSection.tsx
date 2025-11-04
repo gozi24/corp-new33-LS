@@ -33,7 +33,7 @@ export default function AboutSection() {
       <div className="relative flex items-center justify-center hidden md:flex">
         <div className="w-full h-64 md:h-80 bg-slate-100 border border-slate-200 rounded-lg overflow-hidden flex items-center justify-center">
           <img
-            src="/placeholder.svg"
+            src={homeAboutData.image || "/placeholder.svg"}
             alt="About photo"
             className="h-full w-full object-cover"
             loading="lazy"
