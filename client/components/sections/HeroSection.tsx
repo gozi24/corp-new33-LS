@@ -143,7 +143,7 @@ export default function HeroSection(props: HeroSectionProps = {}) {
             ))}
           </div>
 
-          <div className="mt-6 md:mt-8 xl:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
+          {/*<div className="mt-6 md:mt-8 xl:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
             {config.cta.map((button) => (
               <Button
                 key={button.text}
@@ -159,7 +159,7 @@ export default function HeroSection(props: HeroSectionProps = {}) {
                 <Link to={button.href}>{button.text}</Link>
               </Button>
             ))}
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
