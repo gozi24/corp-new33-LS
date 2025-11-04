@@ -44,21 +44,25 @@ const defaultConfig: Required<HeroSectionProps> = {
       label: "Training & seminars",
       icon: GraduationCap,
       bg: "bg-[hsl(var(--brand-start))]",
+      href: "/services/trainings-and-seminars",
     },
     {
       label: "Regulatory guidance",
       icon: ShieldCheck,
       bg: "bg-[hsl(205_100%_35%)]",
+      href: "/services/validation-service",
     },
     {
       label: "Practical resources",
       icon: Microscope,
       bg: "bg-[hsl(var(--brand-start))]",
+      href: "/resources",
     },
     {
       label: "Certification support",
       icon: BadgeCheck,
       bg: "bg-[hsl(205_100%_35%)]",
+      href: "/services/commissioning-and-qualification",
     },
   ],
   cta: [
