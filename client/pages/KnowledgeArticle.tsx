@@ -139,6 +139,21 @@ export default function KnowledgeArticle() {
           className="mb-6"
         />
 
+        {featuredImage && (
+          <div className="mb-8 overflow-hidden rounded-lg">
+            <img
+              src={featuredImage.url}
+              alt={featuredImage?.alt || title}
+              className="h-auto w-full object-cover"
+            />
+            {featuredImage?.caption && (
+              <p className="mt-2 text-sm text-slate-600 italic">
+                {featuredImage.caption}
+              </p>
+            )}
+          </div>
+        )}
+
         {/* Mobile TOC */}
         <div className="mb-8 lg:hidden">
           <Toc sections={sections} />
