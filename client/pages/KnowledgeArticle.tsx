@@ -26,6 +26,8 @@ interface ArticleData {
   sections: ArticleSection[];
   featuredImage?: {
     url: string;
+    alt?: string;
+    caption?: string;
   };
 }
 
