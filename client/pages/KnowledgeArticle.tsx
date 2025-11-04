@@ -99,7 +99,8 @@ export default function KnowledgeArticle() {
     return <div className="container mx-auto px-4 py-12">Loading…</div>;
   }
 
-  const { title, description, date, readMins, sections, featuredImage } = article;
+  const { title, description, date, readMins, sections, featuredImage } =
+    article;
 
   return (
     <div className="bg-white text-slate-900">
@@ -147,9 +148,8 @@ export default function KnowledgeArticle() {
           <Separator className="my-6" />
         </div>
 
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">          
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           <div className="lg:col-span-8">
-          
             {featuredImage && (
               <div className="mb-8 overflow-hidden rounded-lg">
                 <img
@@ -163,8 +163,8 @@ export default function KnowledgeArticle() {
                   </p>
                 )}
               </div>
-              )}
-          
+            )}
+
             {sections.map((s) => (
               <section key={s.id} id={s.id} className="scroll-mt-24">
                 <h2 className="mb-3 text-xl font-semibold">{s.title}</h2>
