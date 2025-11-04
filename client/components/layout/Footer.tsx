@@ -56,6 +56,21 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+          <div>
+            <h4 className="font-semibold mb-3">Services</h4>
+            <ul className="space-y-2 text-sm text-white/90">
+              {footerServices.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    className="hover:text-brand-secondary transition"
+                    to={link.href}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div>
           <h4 className="font-semibold mb-3">Contacts</h4>
