@@ -124,11 +124,12 @@ export default function HeroSection(props: HeroSectionProps = {}) {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 max-w-2xl">
-            {config.features.map(({ label, icon: Icon, bg }) => (
-              <div
+            {config.features.map(({ label, icon: Icon, bg, href }) => (
+              <Link
                 key={label}
+                to={href}
                 className={cn(
-                  "flex items-center gap-2 md:gap-4 text-white rounded-lg px-3 py-3 md:px-4 md:py-4 backdrop-blur-sm bg-white/10 border border-white/20",
+                  "flex items-center gap-2 md:gap-4 text-white rounded-lg px-3 py-3 md:px-4 md:py-4 backdrop-blur-sm bg-white/10 border border-white/20 transition-all hover:bg-white/20 hover:border-white/40",
                   bg,
                 )}
               >
@@ -138,7 +139,7 @@ export default function HeroSection(props: HeroSectionProps = {}) {
                 <span className="font-semibold text-sm md:text-base leading-tight">
                   {label}
                 </span>
-              </div>
+              </Link>
             ))}
           </div>
 
