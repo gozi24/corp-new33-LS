@@ -13,6 +13,7 @@ interface HeroFeature {
   label: string;
   icon: React.ComponentType<{ className?: string }>;
   bg: string;
+  href: string;
 }
 
 interface HeroButton {
