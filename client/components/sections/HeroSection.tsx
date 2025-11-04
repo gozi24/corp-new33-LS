@@ -32,8 +32,8 @@ interface HeroSectionProps {
 
 const defaultConfig: Required<HeroSectionProps> = {
   title: `Welcome to ${siteConfig.siteName}!`,
-  description: `${siteConfig.hero_descr}`,
-  backgroundImage: ${ siteConfig.hero_img },
+  description: siteConfig.hero_descr,
+  backgroundImage: siteConfig.hero_img,
   backgroundImageAlt:
     "Bright and sterile laboratory featuring high-tech research equipment and medical professionals at work",
   backgroundGradFrom: "#020113",
