@@ -13,6 +13,7 @@ interface HeroFeature {
   label: string;
   icon: React.ComponentType<{ className?: string }>;
   bg: string;
+  href: string;
 }
 
 interface HeroButton {
@@ -32,8 +33,8 @@ interface HeroSectionProps {
 
 const defaultConfig: Required<HeroSectionProps> = {
   title: `Welcome to ${siteConfig.siteName}!`,
-  description: `${siteConfig.hero_descr}`,
-  backgroundImage: "/ebi_hero.jpg",
+  description: siteConfig.hero_descr,
+  backgroundImage: siteConfig.hero_img,
   backgroundImageAlt:
     "Bright and sterile laboratory featuring high-tech research equipment and medical professionals at work",
   backgroundGradFrom: "#020113",
@@ -43,21 +44,25 @@ const defaultConfig: Required<HeroSectionProps> = {
       label: "Training & seminars",
       icon: GraduationCap,
       bg: "bg-[hsl(var(--brand-start))]",
-    },
-    {
-      label: "Regulatory guidance",
-      icon: ShieldCheck,
-      bg: "bg-[hsl(205_100%_35%)]",
+      href: "/services/trainings-and-seminars",
     },
     {
       label: "Practical resources",
       icon: Microscope,
       bg: "bg-[hsl(var(--brand-start))]",
+      href: "/resources",
+    },
+    {
+      label: "Regulatory guidance",
+      icon: ShieldCheck,
+      bg: "bg-[hsl(205_100%_35%)]",
+      href: "/contact",
     },
     {
       label: "Certification support",
       icon: BadgeCheck,
       bg: "bg-[hsl(205_100%_35%)]",
+      href: "/contact",
     },
   ],
   cta: [
@@ -119,11 +124,12 @@ export default function HeroSection(props: HeroSectionProps = {}) {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 max-w-2xl">
-            {config.features.map(({ label, icon: Icon, bg }) => (
-              <div
+            {config.features.map(({ label, icon: Icon, bg, href }) => (
+              <Link
                 key={label}
+                to={href}
                 className={cn(
-                  "flex items-center gap-2 md:gap-4 text-white rounded-lg px-3 py-3 md:px-4 md:py-4 backdrop-blur-sm bg-white/10 border border-white/20",
+                  "flex items-center gap-2 md:gap-4 text-white rounded-lg px-3 py-3 md:px-4 md:py-4 backdrop-blur-sm bg-white/10 border border-white/20 transition-all hover:bg-white/20 hover:border-white/40",
                   bg,
                 )}
               >
@@ -133,11 +139,11 @@ export default function HeroSection(props: HeroSectionProps = {}) {
                 <span className="font-semibold text-sm md:text-base leading-tight">
                   {label}
                 </span>
-              </div>
+              </Link>
             ))}
           </div>
 
-          <div className="mt-6 md:mt-8 xl:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
+          {/*<div className="mt-6 md:mt-8 xl:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
             {config.cta.map((button) => (
               <Button
                 key={button.text}
@@ -153,7 +159,7 @@ export default function HeroSection(props: HeroSectionProps = {}) {
                 <Link to={button.href}>{button.text}</Link>
               </Button>
             ))}
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>

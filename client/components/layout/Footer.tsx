@@ -12,10 +12,20 @@ interface NavigationLink {
 const footerNavigation: NavigationLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Resources", href: "/resources" },
   // { label: "Products", href: "/products" },
   { label: "News", href: "/news" },
   { label: "FAQ", href: "/resources/faq" },
   { label: "Contact", href: "/contact" },
+];
+
+const footerServices: NavigationLink[] = [
+  { label: "Trainings and Seminars", href: "/services/trainings-and-seminars" },
+  { label: "Validation Service", href: "/services/validation-service" },
+  {
+    label: "Commissioning and Qualification",
+    href: "/services/commissioning-and-qualification",
+  },
 ];
 
 export default function Footer() {
@@ -36,9 +46,24 @@ export default function Footer() {
         </div>
         <div className="grid grid-cols-2 gap-6 md:gap-10">
           <div>
-            <h4 className="font-semibold mb-3">Navigation</h4>
+            <h4 className="font-semibold mb-6">Navigation</h4>
             <ul className="space-y-2 text-sm text-white/90">
               {footerNavigation.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    className="hover:text-brand-secondary transition"
+                    to={link.href}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-6">Services</h4>
+            <ul className="space-y-2 text-sm text-white/90">
+              {footerServices.map((link) => (
                 <li key={link.href}>
                   <Link
                     className="hover:text-brand-secondary transition"

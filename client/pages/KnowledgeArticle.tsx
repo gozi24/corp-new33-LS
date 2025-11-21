@@ -26,6 +26,8 @@ interface ArticleData {
   sections: ArticleSection[];
   featuredImage?: {
     url: string;
+    alt?: string;
+    caption?: string;
   };
 }
 
@@ -97,7 +99,8 @@ export default function KnowledgeArticle() {
     return <div className="container mx-auto px-4 py-12">Loading…</div>;
   }
 
-  const { title, description, date, readMins, sections, featuredImage } = article;
+  const { title, description, date, readMins, sections, featuredImage } =
+    article;
 
   return (
     <div className="bg-white text-slate-900">
@@ -147,6 +150,21 @@ export default function KnowledgeArticle() {
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           <div className="lg:col-span-8">
+            {featuredImage && (
+              <div className="mb-8 overflow-hidden rounded-lg">
+                <img
+                  src={featuredImage.url}
+                  alt={featuredImage?.alt || title}
+                  className="h-auto w-full object-cover"
+                />
+                {featuredImage?.caption && (
+                  <p className="mt-2 text-sm text-slate-600 italic">
+                    {featuredImage.caption}
+                  </p>
+                )}
+              </div>
+            )}
+
             {sections.map((s) => (
               <section key={s.id} id={s.id} className="scroll-mt-24">
                 <h2 className="mb-3 text-xl font-semibold">{s.title}</h2>
